@@ -1,0 +1,71 @@
+//---------------------------------------------------------------------------
+#include <vcl\condefs.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <dos.h>
+#include <iostream.h>
+#include <conio.h>
+#include <math.h>
+#pragma hdrstop
+//---------------------------------------------------------------------------
+USERES("cikl.res");
+//---------------------------------------------------------------------------
+int main(int argc, char **argv)
+{
+FILE*fp;
+char string[10][10];
+float b=123;
+int i, d=0, i1, i2, i3, i4, i5, i6, i7, i8[99], i9[99], i10[99], i11[99], i12[99],
+i13[99], i14[99], pr=1, w1, w2,w3, w4, w5, w6, z=1000, st=500;
+clock_t t1, t2;
+long double t3, tt, tt1;
+
+for ( i=10; i<=99; i++)     // компонентность
+{             //**
+   itoa(i,string[1],10);
+if (
+    string[1][0]!='0' && string[1][0]!='8' && string[1][0]!='9'
+ && string[1][1]!='0' && string[1][1]!='8' && string[1][1]!='9'
+ && string[1][0]<string[1][1]
+ && string[1][0]=='1'
+ )
+{
+++d;
+i8[d]=i/10;
+i9[d]=i-i8[d]*10;
+printf("%d -- %d * %d\n", i, d, i8[d]);
+   }
+}
+cout << "N cikl (100000000-5sek)" << endl;
+cin >> b;
+
+t1=clock();
+fp=fopen("raz.txt","w");
+
+
+for ( i1=1; i1<=st; i1++)
+{   printf("c %d\n", i1);                                //****
+w1=(z-i1)/2;
+//w1=st-i1;
+for ( i2=1; i2<=w1; i2++)
+{
+if (i1+i2==st)
+{
+for ( i=1; i<=d; i++)
+{
+if (i1*i8[i]+i2*i9[i]==z)
+  {
+  printf("A%d+%d B%d+%d %d\n",i1, i8[i], i2, i9[i], pr++);
+  fprintf(fp,"A%d+%d B%d+%d %d\n",i1, i8[i], i2, i9[i], pr-1);
+ // fprintf(fp,"%c+%d %c+%d %c+%d %c+%d %c+%d %c+%d %c+%d\n",i8[i], i1, i9[i], i2, i10[i], i3, i11[i], i4, i12[i], i5, i13[i], i6, i14[i], i7);
+}}}}}
+fclose(fp);
+
+t2=clock();
+tt=(t2-t1)/CLK_TCK;
+cout << "[cikl] "<< "Time cikle:" << tt <<endl;
+cin >> b;
+	return 0;
+}

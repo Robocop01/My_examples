@@ -1,0 +1,1379 @@
+if
+(
+     //1_
+(ap1[i]==p1 && ap6[i]==p6)
+ && (ap2[i]==p2 && ap3[i]==p3 && ap4[i]==p4 && ap5[i]==p5
+||   ap2[i]==p3 && ap3[i]==p4 && ap4[i]==p5 && ap5[i]==p2
+||   ap2[i]==p4 && ap3[i]==p5 && ap4[i]==p2 && ap5[i]==p3
+||   ap2[i]==p5 && ap3[i]==p2 && ap4[i]==p3 && ap5[i]==p4)
+
+||
+(ap1[i]==p2 && ap6[i]==p4)
+ && (ap2[i]==p1 && ap3[i]==p5 && ap4[i]==p6 && ap5[i]==p3
+||   ap2[i]==p5 && ap3[i]==p6 && ap4[i]==p3 && ap5[i]==p1
+||   ap2[i]==p6 && ap3[i]==p3 && ap4[i]==p1 && ap5[i]==p5
+||   ap2[i]==p3 && ap3[i]==p1 && ap4[i]==p5 && ap5[i]==p6)
+
+||
+(ap1[i]==p3 && ap6[i]==p5)
+ && (ap2[i]==p1 && ap3[i]==p2 && ap4[i]==p6 && ap5[i]==p4
+||   ap2[i]==p2 && ap3[i]==p6 && ap4[i]==p4 && ap5[i]==p1
+||   ap2[i]==p6 && ap3[i]==p4 && ap4[i]==p1 && ap5[i]==p2
+||   ap2[i]==p4 && ap3[i]==p1 && ap4[i]==p2 && ap5[i]==p6)
+
+||
+(ap1[i]==p4 && ap6[i]==p2)
+ && (ap2[i]==p1 && ap3[i]==p3 && ap4[i]==p6 && ap5[i]==p5
+||   ap2[i]==p3 && ap3[i]==p6 && ap4[i]==p5 && ap5[i]==p1
+||   ap2[i]==p6 && ap3[i]==p5 && ap4[i]==p1 && ap5[i]==p3
+||   ap2[i]==p5 && ap3[i]==p1 && ap4[i]==p3 && ap5[i]==p6)
+
+||
+(ap1[i]==p5 && ap6[i]==p3)
+ && (ap2[i]==p1 && ap3[i]==p4 && ap4[i]==p6 && ap5[i]==p2
+||   ap2[i]==p4 && ap3[i]==p6 && ap4[i]==p2 && ap5[i]==p1
+||   ap2[i]==p6 && ap3[i]==p2 && ap4[i]==p1 && ap5[i]==p4
+||   ap2[i]==p2 && ap3[i]==p1 && ap4[i]==p4 && ap5[i]==p6)
+
+||
+(ap1[i]==p6 && ap6[i]==p1)
+ && (ap2[i]==p2 && ap3[i]==p5 && ap4[i]==p4 && ap5[i]==p3
+||   ap2[i]==p5 && ap3[i]==p4 && ap4[i]==p3 && ap5[i]==p2
+||   ap2[i]==p4 && ap3[i]==p3 && ap4[i]==p2 && ap5[i]==p5
+||   ap2[i]==p3 && ap3[i]==p2 && ap4[i]==p5 && ap5[i]==p4)
+
+||
+     //2_
+(ap1[i]==p3 && ap6[i]==p5)
+ && (ap2[i]==p19 && ap3[i]==p20 && ap4[i]==p21 && ap5[i]==p22
+||   ap2[i]==p20 && ap3[i]==p21 && ap4[i]==p22 && ap5[i]==p19
+||   ap2[i]==p21 && ap3[i]==p22 && ap4[i]==p19 && ap5[i]==p20
+||   ap2[i]==p22 && ap3[i]==p19 && ap4[i]==p20 && ap5[i]==p21)
+
+||
+(ap1[i]==p19 && ap6[i]==p21)
+ && (ap2[i]==p3 && ap3[i]==p22 && ap4[i]==p5 && ap5[i]==p20
+||   ap2[i]==p22 && ap3[i]==p5 && ap4[i]==p20 && ap5[i]==p3
+||   ap2[i]==p5 && ap3[i]==p20 && ap4[i]==p3 && ap5[i]==p22
+||   ap2[i]==p20 && ap3[i]==p3 && ap4[i]==p22 && ap5[i]==p5)
+
+||
+(ap1[i]==p20 && ap6[i]==p22)
+ && (ap2[i]==p3 && ap3[i]==p19 && ap4[i]==p5 && ap5[i]==p21
+||   ap2[i]==p19 && ap3[i]==p5 && ap4[i]==p21 && ap5[i]==p3
+||   ap2[i]==p5 && ap3[i]==p21 && ap4[i]==p3 && ap5[i]==p19
+||   ap2[i]==p21 && ap3[i]==p3 && ap4[i]==p19 && ap5[i]==p5)
+
+||
+(ap1[i]==p21 && ap6[i]==p19)
+ && (ap2[i]==p3 && ap3[i]==p20 && ap4[i]==p5 && ap5[i]==p22
+||   ap2[i]==p20 && ap3[i]==p5 && ap4[i]==p22 && ap5[i]==p3
+||   ap2[i]==p5 && ap3[i]==p22 && ap4[i]==p3 && ap5[i]==p20
+||   ap2[i]==p22 && ap3[i]==p3 && ap4[i]==p20 && ap5[i]==p5)
+
+||
+(ap1[i]==p22 && ap6[i]==p20)
+ && (ap2[i]==p3 && ap3[i]==p21 && ap4[i]==p5 && ap5[i]==p19
+||   ap2[i]==p21 && ap3[i]==p5 && ap4[i]==p19 && ap5[i]==p3
+||   ap2[i]==p5 && ap3[i]==p19 && ap4[i]==p3 && ap5[i]==p21
+||   ap2[i]==p19 && ap3[i]==p3 && ap4[i]==p21 && ap5[i]==p5)
+
+||
+(ap1[i]==p5 && ap6[i]==p3)
+ && (ap2[i]==p19 && ap3[i]==p22 && ap4[i]==p21 && ap5[i]==p20
+||   ap2[i]==p22 && ap3[i]==p21 && ap4[i]==p20 && ap5[i]==p19
+||   ap2[i]==p21 && ap3[i]==p20 && ap4[i]==p19 && ap5[i]==p22
+||   ap2[i]==p20 && ap3[i]==p19 && ap4[i]==p22 && ap5[i]==p21)
+
+||
+     //3_
+(ap1[i]==p1 && ap6[i]==p6)
+ && (ap2[i]==p15 && ap3[i]==p16 && ap4[i]==p17 && ap5[i]==p18
+||   ap2[i]==p16 && ap3[i]==p17 && ap4[i]==p18 && ap5[i]==p15
+||   ap2[i]==p17 && ap3[i]==p18 && ap4[i]==p15 && ap5[i]==p16
+||   ap2[i]==p18 && ap3[i]==p15 && ap4[i]==p16 && ap5[i]==p17)
+
+||
+(ap1[i]==p15 && ap6[i]==p17)
+ && (ap2[i]==p1 && ap3[i]==p18 && ap4[i]==p6 && ap5[i]==p16
+||   ap2[i]==p18 && ap3[i]==p6 && ap4[i]==p16 && ap5[i]==p1
+||   ap2[i]==p6 && ap3[i]==p16 && ap4[i]==p1 && ap5[i]==p18
+||   ap2[i]==p16 && ap3[i]==p1 && ap4[i]==p18 && ap5[i]==p6)
+
+||
+(ap1[i]==p16 && ap6[i]==p18)
+ && (ap2[i]==p1 && ap3[i]==p15 && ap4[i]==p6 && ap5[i]==p17
+||   ap2[i]==p15 && ap3[i]==p6 && ap4[i]==p17 && ap5[i]==p1
+||   ap2[i]==p6 && ap3[i]==p17 && ap4[i]==p1 && ap5[i]==p15
+||   ap2[i]==p17 && ap3[i]==p1 && ap4[i]==p15 && ap5[i]==p6)
+
+||
+(ap1[i]==p17 && ap6[i]==p15)
+ && (ap2[i]==p1 && ap3[i]==p16 && ap4[i]==p6 && ap5[i]==p18
+||   ap2[i]==p16 && ap3[i]==p6 && ap4[i]==p18 && ap5[i]==p1
+||   ap2[i]==p6 && ap3[i]==p18 && ap4[i]==p1 && ap5[i]==p16
+||   ap2[i]==p18 && ap3[i]==p1 && ap4[i]==p16 && ap5[i]==p6)
+
+||
+(ap1[i]==p18 && ap6[i]==p16)
+ && (ap2[i]==p1 && ap3[i]==p17 && ap4[i]==p6 && ap5[i]==p15
+||   ap2[i]==p17 && ap3[i]==p6 && ap4[i]==p15 && ap5[i]==p1
+||   ap2[i]==p6 && ap3[i]==p15 && ap4[i]==p1 && ap5[i]==p17
+||   ap2[i]==p15 && ap3[i]==p1 && ap4[i]==p17 && ap5[i]==p6)
+
+||
+(ap1[i]==p6 && ap6[i]==p1)
+ && (ap2[i]==p15 && ap3[i]==p18 && ap4[i]==p17 && ap5[i]==p16
+||   ap2[i]==p18 && ap3[i]==p17 && ap4[i]==p16 && ap5[i]==p15
+||   ap2[i]==p17 && ap3[i]==p16 && ap4[i]==p15 && ap5[i]==p18
+||   ap2[i]==p16 && ap3[i]==p15 && ap4[i]==p18 && ap5[i]==p17)
+
+||
+     //4_
+(ap1[i]==p2 && ap6[i]==p4)
+ && (ap2[i]==p23 && ap3[i]==p24 && ap4[i]==p25 && ap5[i]==p26
+||   ap2[i]==p24 && ap3[i]==p25 && ap4[i]==p26 && ap5[i]==p23
+||   ap2[i]==p25 && ap3[i]==p26 && ap4[i]==p23 && ap5[i]==p24
+||   ap2[i]==p26 && ap3[i]==p23 && ap4[i]==p24 && ap5[i]==p25)
+
+||
+(ap1[i]==p23 && ap6[i]==p25)
+ && (ap2[i]==p2 && ap3[i]==p26 && ap4[i]==p4 && ap5[i]==p24
+||   ap2[i]==p26 && ap3[i]==p4 && ap4[i]==p24 && ap5[i]==p2
+||   ap2[i]==p4 && ap3[i]==p24 && ap4[i]==p2 && ap5[i]==p26
+||   ap2[i]==p24 && ap3[i]==p2 && ap4[i]==p26 && ap5[i]==p4)
+
+||
+(ap1[i]==p24 && ap6[i]==p26)
+ && (ap2[i]==p2 && ap3[i]==p23 && ap4[i]==p4 && ap5[i]==p25
+||   ap2[i]==p23 && ap3[i]==p4 && ap4[i]==p25 && ap5[i]==p2
+||   ap2[i]==p4 && ap3[i]==p25 && ap4[i]==p2 && ap5[i]==p23
+||   ap2[i]==p25 && ap3[i]==p2 && ap4[i]==p23 && ap5[i]==p4)
+
+||
+(ap1[i]==p25 && ap6[i]==p23)
+ && (ap2[i]==p2 && ap3[i]==p24 && ap4[i]==p4 && ap5[i]==p26
+||   ap2[i]==p24 && ap3[i]==p4 && ap4[i]==p26 && ap5[i]==p2
+||   ap2[i]==p4 && ap3[i]==p26 && ap4[i]==p2 && ap5[i]==p24
+||   ap2[i]==p26 && ap3[i]==p2 && ap4[i]==p24 && ap5[i]==p4)
+
+||
+(ap1[i]==p26 && ap6[i]==p24)
+ && (ap2[i]==p2 && ap3[i]==p25 && ap4[i]==p4 && ap5[i]==p23
+||   ap2[i]==p25 && ap3[i]==p4 && ap4[i]==p23 && ap5[i]==p2
+||   ap2[i]==p4 && ap3[i]==p23 && ap4[i]==p2 && ap5[i]==p25
+||   ap2[i]==p23 && ap3[i]==p2 && ap4[i]==p25 && ap5[i]==p4)
+
+||
+(ap1[i]==p4 && ap6[i]==p2)
+ && (ap2[i]==p23 && ap3[i]==p26 && ap4[i]==p25 && ap5[i]==p24
+||   ap2[i]==p26 && ap3[i]==p25 && ap4[i]==p24 && ap5[i]==p23
+||   ap2[i]==p25 && ap3[i]==p24 && ap4[i]==p23 && ap5[i]==p26
+||   ap2[i]==p24 && ap3[i]==p23 && ap4[i]==p26 && ap5[i]==p25)
+
+||
+     //5_
+(ap1[i]==p27 && ap6[i]==p28)
+ && (ap2[i]==p29 && ap3[i]==p31 && ap4[i]==p30 && ap5[i]==p32
+||   ap2[i]==p31 && ap3[i]==p30 && ap4[i]==p32 && ap5[i]==p29
+||   ap2[i]==p30 && ap3[i]==p32 && ap4[i]==p29 && ap5[i]==p31
+||   ap2[i]==p32 && ap3[i]==p29 && ap4[i]==p31 && ap5[i]==p30)
+
+||
+(ap1[i]==p29 && ap6[i]==p30)
+ && (ap2[i]==p27 && ap3[i]==p32 && ap4[i]==p28 && ap5[i]==p31
+||   ap2[i]==p32 && ap3[i]==p28 && ap4[i]==p31 && ap5[i]==p27
+||   ap2[i]==p28 && ap3[i]==p31 && ap4[i]==p27 && ap5[i]==p32
+||   ap2[i]==p31 && ap3[i]==p27 && ap4[i]==p32 && ap5[i]==p28)
+
+||
+(ap1[i]==p31 && ap6[i]==p32)
+ && (ap2[i]==p27 && ap3[i]==p29 && ap4[i]==p28 && ap5[i]==p30
+||   ap2[i]==p29 && ap3[i]==p28 && ap4[i]==p30 && ap5[i]==p27
+||   ap2[i]==p28 && ap3[i]==p30 && ap4[i]==p27 && ap5[i]==p29
+||   ap2[i]==p30 && ap3[i]==p27 && ap4[i]==p29 && ap5[i]==p28)
+
+||
+(ap1[i]==p30 && ap6[i]==p29)
+ && (ap2[i]==p27 && ap3[i]==p31 && ap4[i]==p28 && ap5[i]==p32
+||   ap2[i]==p31 && ap3[i]==p28 && ap4[i]==p32 && ap5[i]==p27
+||   ap2[i]==p28 && ap3[i]==p32 && ap4[i]==p27 && ap5[i]==p31
+||   ap2[i]==p32 && ap3[i]==p27 && ap4[i]==p31 && ap5[i]==p28)
+
+||
+(ap1[i]==p32 && ap6[i]==p31)
+ && (ap2[i]==p27 && ap3[i]==p30 && ap4[i]==p28 && ap5[i]==p29
+||   ap2[i]==p30 && ap3[i]==p28 && ap4[i]==p29 && ap5[i]==p27
+||   ap2[i]==p28 && ap3[i]==p29 && ap4[i]==p27 && ap5[i]==p30
+||   ap2[i]==p29 && ap3[i]==p27 && ap4[i]==p30 && ap5[i]==p28)
+
+||
+(ap1[i]==p28 && ap6[i]==p27)
+ && (ap2[i]==p29 && ap3[i]==p32 && ap4[i]==p30 && ap5[i]==p31
+||   ap2[i]==p32 && ap3[i]==p30 && ap4[i]==p31 && ap5[i]==p29
+||   ap2[i]==p30 && ap3[i]==p31 && ap4[i]==p29 && ap5[i]==p32
+||   ap2[i]==p31 && ap3[i]==p29 && ap4[i]==p32 && ap5[i]==p30)
+
+||
+     //6_
+(ap1[i]==p16 && ap6[i]==p18)
+ && (ap2[i]==p19 && ap3[i]==p29 && ap4[i]==p21 && ap5[i]==p30
+||   ap2[i]==p29 && ap3[i]==p21 && ap4[i]==p30 && ap5[i]==p19
+||   ap2[i]==p21 && ap3[i]==p30 && ap4[i]==p19 && ap5[i]==p29
+||   ap2[i]==p30 && ap3[i]==p19 && ap4[i]==p29 && ap5[i]==p21)
+
+||
+(ap1[i]==p19 && ap6[i]==p21)
+ && (ap2[i]==p16 && ap3[i]==p30 && ap4[i]==p18 && ap5[i]==p29
+||   ap2[i]==p30 && ap3[i]==p18 && ap4[i]==p29 && ap5[i]==p16
+||   ap2[i]==p18 && ap3[i]==p29 && ap4[i]==p16 && ap5[i]==p30
+||   ap2[i]==p29 && ap3[i]==p16 && ap4[i]==p30 && ap5[i]==p18)
+
+||
+(ap1[i]==p29 && ap6[i]==p30)
+ && (ap2[i]==p16 && ap3[i]==p19 && ap4[i]==p18 && ap5[i]==p21
+||   ap2[i]==p19 && ap3[i]==p18 && ap4[i]==p21 && ap5[i]==p16
+||   ap2[i]==p18 && ap3[i]==p21 && ap4[i]==p16 && ap5[i]==p19
+||   ap2[i]==p21 && ap3[i]==p16 && ap4[i]==p19 && ap5[i]==p18)
+
+||
+(ap1[i]==p21 && ap6[i]==p19)
+ && (ap2[i]==p16 && ap3[i]==p29 && ap4[i]==p18 && ap5[i]==p30
+||   ap2[i]==p29 && ap3[i]==p18 && ap4[i]==p30 && ap5[i]==p16
+||   ap2[i]==p18 && ap3[i]==p30 && ap4[i]==p16 && ap5[i]==p29
+||   ap2[i]==p30 && ap3[i]==p16 && ap4[i]==p29 && ap5[i]==p18)
+
+||
+(ap1[i]==p30 && ap6[i]==p29)
+ && (ap2[i]==p16 && ap3[i]==p21 && ap4[i]==p18 && ap5[i]==p19
+||   ap2[i]==p21 && ap3[i]==p18 && ap4[i]==p19 && ap5[i]==p16
+||   ap2[i]==p18 && ap3[i]==p19 && ap4[i]==p16 && ap5[i]==p21
+||   ap2[i]==p19 && ap3[i]==p16 && ap4[i]==p21 && ap5[i]==p18)
+
+||
+(ap1[i]==p18 && ap6[i]==p16)
+ && (ap2[i]==p19 && ap3[i]==p30 && ap4[i]==p21 && ap5[i]==p29
+||   ap2[i]==p30 && ap3[i]==p21 && ap4[i]==p29 && ap5[i]==p19
+||   ap2[i]==p21 && ap3[i]==p29 && ap4[i]==p19 && ap5[i]==p30
+||   ap2[i]==p29 && ap3[i]==p19 && ap4[i]==p30 && ap5[i]==p21)
+
+||
+     //7_
+(ap1[i]==p15 && ap6[i]==p17)
+ && (ap2[i]==p23 && ap3[i]==p27 && ap4[i]==p25 && ap5[i]==p28
+||   ap2[i]==p27 && ap3[i]==p25 && ap4[i]==p28 && ap5[i]==p23
+||   ap2[i]==p25 && ap3[i]==p28 && ap4[i]==p23 && ap5[i]==p27
+||   ap2[i]==p28 && ap3[i]==p23 && ap4[i]==p27 && ap5[i]==p25)
+
+||
+(ap1[i]==p23 && ap6[i]==p25)
+ && (ap2[i]==p15 && ap3[i]==p28 && ap4[i]==p17 && ap5[i]==p27
+||   ap2[i]==p28 && ap3[i]==p17 && ap4[i]==p27 && ap5[i]==p15
+||   ap2[i]==p17 && ap3[i]==p27 && ap4[i]==p15 && ap5[i]==p28
+||   ap2[i]==p27 && ap3[i]==p15 && ap4[i]==p28 && ap5[i]==p17)
+
+||
+(ap1[i]==p27 && ap6[i]==p28)
+ && (ap2[i]==p15 && ap3[i]==p23 && ap4[i]==p17 && ap5[i]==p25
+||   ap2[i]==p23 && ap3[i]==p17 && ap4[i]==p25 && ap5[i]==p15
+||   ap2[i]==p17 && ap3[i]==p25 && ap4[i]==p15 && ap5[i]==p23
+||   ap2[i]==p25 && ap3[i]==p15 && ap4[i]==p23 && ap5[i]==p17)
+
+||
+(ap1[i]==p25 && ap6[i]==p23)
+ && (ap2[i]==p15 && ap3[i]==p27 && ap4[i]==p17 && ap5[i]==p28
+||   ap2[i]==p27 && ap3[i]==p17 && ap4[i]==p28 && ap5[i]==p15
+||   ap2[i]==p17 && ap3[i]==p28 && ap4[i]==p15 && ap5[i]==p27
+||   ap2[i]==p28 && ap3[i]==p15 && ap4[i]==p27 && ap5[i]==p17)
+
+||
+(ap1[i]==p28 && ap6[i]==p27)
+ && (ap2[i]==p15 && ap3[i]==p25 && ap4[i]==p17 && ap5[i]==p23
+||   ap2[i]==p25 && ap3[i]==p17 && ap4[i]==p23 && ap5[i]==p15
+||   ap2[i]==p17 && ap3[i]==p23 && ap4[i]==p15 && ap5[i]==p25
+||   ap2[i]==p23 && ap3[i]==p15 && ap4[i]==p25 && ap5[i]==p17)
+
+||
+(ap1[i]==p17 && ap6[i]==p15)
+ && (ap2[i]==p23 && ap3[i]==p28 && ap4[i]==p25 && ap5[i]==p27
+||   ap2[i]==p28 && ap3[i]==p25 && ap4[i]==p27 && ap5[i]==p23
+||   ap2[i]==p25 && ap3[i]==p27 && ap4[i]==p23 && ap5[i]==p28
+||   ap2[i]==p27 && ap3[i]==p23 && ap4[i]==p28 && ap5[i]==p25)
+
+||
+     //8_
+(ap1[i]==p20 && ap6[i]==p22)
+ && (ap2[i]==p24 && ap3[i]==p31 && ap4[i]==p26 && ap5[i]==p32
+||   ap2[i]==p31 && ap3[i]==p26 && ap4[i]==p32 && ap5[i]==p24
+||   ap2[i]==p26 && ap3[i]==p32 && ap4[i]==p24 && ap5[i]==p31
+||   ap2[i]==p32 && ap3[i]==p24 && ap4[i]==p31 && ap5[i]==p26)
+
+||
+(ap1[i]==p24 && ap6[i]==p26)
+ && (ap2[i]==p20 && ap3[i]==p32 && ap4[i]==p22 && ap5[i]==p31
+||   ap2[i]==p32 && ap3[i]==p22 && ap4[i]==p31 && ap5[i]==p20
+||   ap2[i]==p22 && ap3[i]==p31 && ap4[i]==p20 && ap5[i]==p32
+||   ap2[i]==p31 && ap3[i]==p20 && ap4[i]==p32 && ap5[i]==p22)
+
+||
+(ap1[i]==p31 && ap6[i]==p32)
+ && (ap2[i]==p20 && ap3[i]==p24 && ap4[i]==p22 && ap5[i]==p26
+||   ap2[i]==p24 && ap3[i]==p22 && ap4[i]==p26 && ap5[i]==p20
+||   ap2[i]==p22 && ap3[i]==p26 && ap4[i]==p20 && ap5[i]==p24
+||   ap2[i]==p26 && ap3[i]==p20 && ap4[i]==p24 && ap5[i]==p22)
+
+||
+(ap1[i]==p26 && ap6[i]==p24)
+ && (ap2[i]==p20 && ap3[i]==p31 && ap4[i]==p22 && ap5[i]==p32
+||   ap2[i]==p31 && ap3[i]==p22 && ap4[i]==p32 && ap5[i]==p20
+||   ap2[i]==p22 && ap3[i]==p32 && ap4[i]==p20 && ap5[i]==p31
+||   ap2[i]==p32 && ap3[i]==p20 && ap4[i]==p31 && ap5[i]==p22)
+
+||
+(ap1[i]==p32 && ap6[i]==p31)
+ && (ap2[i]==p20 && ap3[i]==p26 && ap4[i]==p22 && ap5[i]==p24
+||   ap2[i]==p26 && ap3[i]==p22 && ap4[i]==p24 && ap5[i]==p20
+||   ap2[i]==p22 && ap3[i]==p24 && ap4[i]==p20 && ap5[i]==p26
+||   ap2[i]==p24 && ap3[i]==p20 && ap4[i]==p26 && ap5[i]==p22)
+
+||
+(ap1[i]==p22 && ap6[i]==p20)
+ && (ap2[i]==p24 && ap3[i]==p32 && ap4[i]==p26 && ap5[i]==p31
+||   ap2[i]==p32 && ap3[i]==p26 && ap4[i]==p31 && ap5[i]==p24
+||   ap2[i]==p26 && ap3[i]==p31 && ap4[i]==p24 && ap5[i]==p32
+||   ap2[i]==p31 && ap3[i]==p24 && ap4[i]==p32 && ap5[i]==p26)
+
+||
+     //9_
+(ap1[i]==p3 && ap6[i]==p18)
+ && (ap2[i]==p1 && ap3[i]==p7 && ap4[i]==p19 && ap5[i]==p8
+||   ap2[i]==p7 && ap3[i]==p19 && ap4[i]==p8 && ap5[i]==p1
+||   ap2[i]==p19 && ap3[i]==p8 && ap4[i]==p1 && ap5[i]==p7
+||   ap2[i]==p8 && ap3[i]==p1 && ap4[i]==p7 && ap5[i]==p19)
+
+||
+(ap1[i]==p1 && ap6[i]==p19)
+ && (ap2[i]==p3 && ap3[i]==p8 && ap4[i]==p18 && ap5[i]==p7
+||   ap2[i]==p8 && ap3[i]==p18 && ap4[i]==p7 && ap5[i]==p3
+||   ap2[i]==p18 && ap3[i]==p7 && ap4[i]==p3 && ap5[i]==p8
+||   ap2[i]==p7 && ap3[i]==p3 && ap4[i]==p8 && ap5[i]==p18)
+
+||
+(ap1[i]==p7 && ap6[i]==p8)
+ && (ap2[i]==p3 && ap3[i]==p1 && ap4[i]==p18 && ap5[i]==p19
+||   ap2[i]==p1 && ap3[i]==p18 && ap4[i]==p19 && ap5[i]==p3
+||   ap2[i]==p18 && ap3[i]==p19 && ap4[i]==p3 && ap5[i]==p1
+||   ap2[i]==p19 && ap3[i]==p3 && ap4[i]==p1 && ap5[i]==p18)
+
+||
+(ap1[i]==p19 && ap6[i]==p1)
+ && (ap2[i]==p3 && ap3[i]==p7 && ap4[i]==p18 && ap5[i]==p8
+||   ap2[i]==p7 && ap3[i]==p18 && ap4[i]==p8 && ap5[i]==p3
+||   ap2[i]==p18 && ap3[i]==p8 && ap4[i]==p3 && ap5[i]==p7
+||   ap2[i]==p8 && ap3[i]==p3 && ap4[i]==p7 && ap5[i]==p18)
+
+||
+(ap1[i]==p8 && ap6[i]==p7)
+ && (ap2[i]==p3 && ap3[i]==p19 && ap4[i]==p18 && ap5[i]==p1
+||   ap2[i]==p19 && ap3[i]==p18 && ap4[i]==p1 && ap5[i]==p3
+||   ap2[i]==p18 && ap3[i]==p1 && ap4[i]==p3 && ap5[i]==p19
+||   ap2[i]==p1 && ap3[i]==p3 && ap4[i]==p19 && ap5[i]==p18)
+
+||
+(ap1[i]==p18 && ap6[i]==p3)
+ && (ap2[i]==p1 && ap3[i]==p8 && ap4[i]==p19 && ap5[i]==p7
+||   ap2[i]==p8 && ap3[i]==p19 && ap4[i]==p7 && ap5[i]==p1
+||   ap2[i]==p19 && ap3[i]==p7 && ap4[i]==p1 && ap5[i]==p8
+||   ap2[i]==p7 && ap3[i]==p1 && ap4[i]==p8 && ap5[i]==p19)
+
+||
+     //10_
+(ap1[i]==p5 && ap6[i]==p16)
+ && (ap2[i]==p1 && ap3[i]==p9 && ap4[i]==p19 && ap5[i]==p10
+||   ap2[i]==p9 && ap3[i]==p19 && ap4[i]==p10 && ap5[i]==p1
+||   ap2[i]==p19 && ap3[i]==p10 && ap4[i]==p1 && ap5[i]==p9
+||   ap2[i]==p10 && ap3[i]==p1 && ap4[i]==p9 && ap5[i]==p19)
+
+||
+(ap1[i]==p1 && ap6[i]==p19)
+ && (ap2[i]==p5 && ap3[i]==p10 && ap4[i]==p16 && ap5[i]==p9
+||   ap2[i]==p10 && ap3[i]==p16 && ap4[i]==p9 && ap5[i]==p5
+||   ap2[i]==p16 && ap3[i]==p9 && ap4[i]==p5 && ap5[i]==p10
+||   ap2[i]==p9 && ap3[i]==p5 && ap4[i]==p10 && ap5[i]==p16)
+
+||
+(ap1[i]==p9 && ap6[i]==p10)
+ && (ap2[i]==p5 && ap3[i]==p1 && ap4[i]==p16 && ap5[i]==p19
+||   ap2[i]==p1 && ap3[i]==p16 && ap4[i]==p19 && ap5[i]==p5
+||   ap2[i]==p16 && ap3[i]==p19 && ap4[i]==p5 && ap5[i]==p1
+||   ap2[i]==p19 && ap3[i]==p5 && ap4[i]==p1 && ap5[i]==p16)
+
+||
+(ap1[i]==p19 && ap6[i]==p1)
+ && (ap2[i]==p5 && ap3[i]==p9 && ap4[i]==p16 && ap5[i]==p10
+||   ap2[i]==p9 && ap3[i]==p16 && ap4[i]==p10 && ap5[i]==p5
+||   ap2[i]==p16 && ap3[i]==p10 && ap4[i]==p5 && ap5[i]==p9
+||   ap2[i]==p10 && ap3[i]==p5 && ap4[i]==p9 && ap5[i]==p16)
+
+||
+(ap1[i]==p10 && ap6[i]==p9)
+ && (ap2[i]==p5 && ap3[i]==p19 && ap4[i]==p16 && ap5[i]==p1
+||   ap2[i]==p19 && ap3[i]==p16 && ap4[i]==p1 && ap5[i]==p5
+||   ap2[i]==p16 && ap3[i]==p1 && ap4[i]==p5 && ap5[i]==p19
+||   ap2[i]==p1 && ap3[i]==p5 && ap4[i]==p19 && ap5[i]==p16)
+
+||
+(ap1[i]==p16 && ap6[i]==p5)
+ && (ap2[i]==p1 && ap3[i]==p10 && ap4[i]==p19 && ap5[i]==p9
+||   ap2[i]==p10 && ap3[i]==p19 && ap4[i]==p9 && ap5[i]==p1
+||   ap2[i]==p19 && ap3[i]==p9 && ap4[i]==p1 && ap5[i]==p10
+||   ap2[i]==p9 && ap3[i]==p1 && ap4[i]==p10 && ap5[i]==p19)
+
+||
+     //11_
+(ap1[i]==p3 && ap6[i]==p18)
+ && (ap2[i]==p6 && ap3[i]==p14 && ap4[i]==p21 && ap5[i]==p13
+||   ap2[i]==p14 && ap3[i]==p21 && ap4[i]==p13 && ap5[i]==p6
+||   ap2[i]==p21 && ap3[i]==p13 && ap4[i]==p6 && ap5[i]==p14
+||   ap2[i]==p13 && ap3[i]==p6 && ap4[i]==p14 && ap5[i]==p21)
+
+||
+(ap1[i]==p6 && ap6[i]==p21)
+ && (ap2[i]==p3 && ap3[i]==p13 && ap4[i]==p18 && ap5[i]==p14
+||   ap2[i]==p13 && ap3[i]==p18 && ap4[i]==p14 && ap5[i]==p3
+||   ap2[i]==p18 && ap3[i]==p14 && ap4[i]==p3 && ap5[i]==p13
+||   ap2[i]==p14 && ap3[i]==p3 && ap4[i]==p13 && ap5[i]==p18)
+
+||
+(ap1[i]==p14 && ap6[i]==p13)
+ && (ap2[i]==p3 && ap3[i]==p6 && ap4[i]==p18 && ap5[i]==p21
+||   ap2[i]==p6 && ap3[i]==p18 && ap4[i]==p21 && ap5[i]==p3
+||   ap2[i]==p18 && ap3[i]==p21 && ap4[i]==p3 && ap5[i]==p6
+||   ap2[i]==p21 && ap3[i]==p3 && ap4[i]==p6 && ap5[i]==p18)
+
+||
+(ap1[i]==p21 && ap6[i]==p6)
+ && (ap2[i]==p3 && ap3[i]==p14 && ap4[i]==p18 && ap5[i]==p13
+||   ap2[i]==p14 && ap3[i]==p18 && ap4[i]==p13 && ap5[i]==p3
+||   ap2[i]==p18 && ap3[i]==p13 && ap4[i]==p3 && ap5[i]==p14
+||   ap2[i]==p13 && ap3[i]==p3 && ap4[i]==p14 && ap5[i]==p18)
+
+||
+(ap1[i]==p13 && ap6[i]==p14)
+ && (ap2[i]==p3 && ap3[i]==p21 && ap4[i]==p18 && ap5[i]==p6
+||   ap2[i]==p21 && ap3[i]==p18 && ap4[i]==p6 && ap5[i]==p3
+||   ap2[i]==p18 && ap3[i]==p6 && ap4[i]==p3 && ap5[i]==p21
+||   ap2[i]==p6 && ap3[i]==p3 && ap4[i]==p21 && ap5[i]==p18)
+
+||
+(ap1[i]==p18 && ap6[i]==p3)
+ && (ap2[i]==p6 && ap3[i]==p13 && ap4[i]==p21 && ap5[i]==p14
+||   ap2[i]==p13 && ap3[i]==p21 && ap4[i]==p14 && ap5[i]==p6
+||   ap2[i]==p21 && ap3[i]==p14 && ap4[i]==p6 && ap5[i]==p13
+||   ap2[i]==p14 && ap3[i]==p6 && ap4[i]==p13 && ap5[i]==p21)
+
+||
+     //12_
+(ap1[i]==p5 && ap6[i]==p16)
+ && (ap2[i]==p6 && ap3[i]==p12 && ap4[i]==p21 && ap5[i]==p11
+||   ap2[i]==p12 && ap3[i]==p21 && ap4[i]==p11 && ap5[i]==p6
+||   ap2[i]==p21 && ap3[i]==p11 && ap4[i]==p6 && ap5[i]==p12
+||   ap2[i]==p11 && ap3[i]==p6 && ap4[i]==p12 && ap5[i]==p21)
+
+||
+(ap1[i]==p6 && ap6[i]==p21)
+ && (ap2[i]==p5 && ap3[i]==p11 && ap4[i]==p16 && ap5[i]==p12
+||   ap2[i]==p11 && ap3[i]==p16 && ap4[i]==p12 && ap5[i]==p5
+||   ap2[i]==p16 && ap3[i]==p12 && ap4[i]==p5 && ap5[i]==p11
+||   ap2[i]==p12 && ap3[i]==p5 && ap4[i]==p11 && ap5[i]==p16)
+
+||
+(ap1[i]==p12 && ap6[i]==p11)
+ && (ap2[i]==p5 && ap3[i]==p6 && ap4[i]==p16 && ap5[i]==p21
+||   ap2[i]==p6 && ap3[i]==p16 && ap4[i]==p21 && ap5[i]==p5
+||   ap2[i]==p16 && ap3[i]==p21 && ap4[i]==p5 && ap5[i]==p6
+||   ap2[i]==p21 && ap3[i]==p5 && ap4[i]==p6 && ap5[i]==p16)
+
+||
+(ap1[i]==p21 && ap6[i]==p6)
+ && (ap2[i]==p5 && ap3[i]==p12 && ap4[i]==p16 && ap5[i]==p11
+||   ap2[i]==p12 && ap3[i]==p16 && ap4[i]==p11 && ap5[i]==p5
+||   ap2[i]==p16 && ap3[i]==p11 && ap4[i]==p5 && ap5[i]==p12
+||   ap2[i]==p11 && ap3[i]==p5 && ap4[i]==p12 && ap5[i]==p16)
+
+||
+(ap1[i]==p11 && ap6[i]==p12)
+ && (ap2[i]==p5 && ap3[i]==p21 && ap4[i]==p16 && ap5[i]==p6
+||   ap2[i]==p21 && ap3[i]==p16 && ap4[i]==p6 && ap5[i]==p5
+||   ap2[i]==p16 && ap3[i]==p6 && ap4[i]==p5 && ap5[i]==p21
+||   ap2[i]==p6 && ap3[i]==p5 && ap4[i]==p21 && ap5[i]==p16)
+
+||
+(ap1[i]==p16 && ap6[i]==p5)
+ && (ap2[i]==p6 && ap3[i]==p11 && ap4[i]==p21 && ap5[i]==p12
+||   ap2[i]==p11 && ap3[i]==p21 && ap4[i]==p12 && ap5[i]==p6
+||   ap2[i]==p21 && ap3[i]==p12 && ap4[i]==p6 && ap5[i]==p11
+||   ap2[i]==p12 && ap3[i]==p6 && ap4[i]==p11 && ap5[i]==p21)
+
+||
+     //13_
+(ap1[i]==p2 && ap6[i]==p17)
+ && (ap2[i]==p1 && ap3[i]==p10 && ap4[i]==p23 && ap5[i]==p7
+||   ap2[i]==p10 && ap3[i]==p23 && ap4[i]==p7 && ap5[i]==p1
+||   ap2[i]==p23 && ap3[i]==p7 && ap4[i]==p1 && ap5[i]==p10
+||   ap2[i]==p7 && ap3[i]==p1 && ap4[i]==p10 && ap5[i]==p23)
+
+||
+(ap1[i]==p1 && ap6[i]==p23)
+ && (ap2[i]==p2 && ap3[i]==p7 && ap4[i]==p17 && ap5[i]==p10
+||   ap2[i]==p7 && ap3[i]==p17 && ap4[i]==p10 && ap5[i]==p2
+||   ap2[i]==p17 && ap3[i]==p10 && ap4[i]==p2 && ap5[i]==p7
+||   ap2[i]==p10 && ap3[i]==p2 && ap4[i]==p7 && ap5[i]==p17)
+
+||
+(ap1[i]==p10 && ap6[i]==p7)
+ && (ap2[i]==p2 && ap3[i]==p1 && ap4[i]==p17 && ap5[i]==p23
+||   ap2[i]==p1 && ap3[i]==p17 && ap4[i]==p23 && ap5[i]==p2
+||   ap2[i]==p17 && ap3[i]==p23 && ap4[i]==p2 && ap5[i]==p1
+||   ap2[i]==p23 && ap3[i]==p2 && ap4[i]==p1 && ap5[i]==p17)
+
+||
+(ap1[i]==p23 && ap6[i]==p1)
+ && (ap2[i]==p2 && ap3[i]==p10 && ap4[i]==p17 && ap5[i]==p7
+||   ap2[i]==p10 && ap3[i]==p17 && ap4[i]==p7 && ap5[i]==p2
+||   ap2[i]==p17 && ap3[i]==p7 && ap4[i]==p2 && ap5[i]==p10
+||   ap2[i]==p7 && ap3[i]==p2 && ap4[i]==p10 && ap5[i]==p17)
+
+||
+(ap1[i]==p7 && ap6[i]==p10)
+ && (ap2[i]==p2 && ap3[i]==p23 && ap4[i]==p17 && ap5[i]==p1
+||   ap2[i]==p23 && ap3[i]==p17 && ap4[i]==p1 && ap5[i]==p2
+||   ap2[i]==p17 && ap3[i]==p1 && ap4[i]==p2 && ap5[i]==p23
+||   ap2[i]==p1 && ap3[i]==p2 && ap4[i]==p23 && ap5[i]==p17)
+
+||
+(ap1[i]==p17 && ap6[i]==p2)
+ && (ap2[i]==p1 && ap3[i]==p7 && ap4[i]==p23 && ap5[i]==p10
+||   ap2[i]==p7 && ap3[i]==p23 && ap4[i]==p10 && ap5[i]==p1
+||   ap2[i]==p23 && ap3[i]==p10 && ap4[i]==p1 && ap5[i]==p7
+||   ap2[i]==p10 && ap3[i]==p1 && ap4[i]==p7 && ap5[i]==p23)
+
+||
+     //14_
+(ap1[i]==p4 && ap6[i]==p15)
+ && (ap2[i]==p1 && ap3[i]==p8 && ap4[i]==p23 && ap5[i]==p9
+||   ap2[i]==p8 && ap3[i]==p23 && ap4[i]==p9 && ap5[i]==p1
+||   ap2[i]==p23 && ap3[i]==p9 && ap4[i]==p1 && ap5[i]==p8
+||   ap2[i]==p9 && ap3[i]==p1 && ap4[i]==p8 && ap5[i]==p23)
+
+||
+(ap1[i]==p1 && ap6[i]==p23)
+ && (ap2[i]==p4 && ap3[i]==p9 && ap4[i]==p15 && ap5[i]==p8
+||   ap2[i]==p9 && ap3[i]==p15 && ap4[i]==p8 && ap5[i]==p4
+||   ap2[i]==p15 && ap3[i]==p8 && ap4[i]==p4 && ap5[i]==p9
+||   ap2[i]==p8 && ap3[i]==p4 && ap4[i]==p9 && ap5[i]==p15)
+
+||
+(ap1[i]==p8 && ap6[i]==p9)
+ && (ap2[i]==p4 && ap3[i]==p1 && ap4[i]==p15 && ap5[i]==p23
+||   ap2[i]==p1 && ap3[i]==p15 && ap4[i]==p23 && ap5[i]==p4
+||   ap2[i]==p15 && ap3[i]==p23 && ap4[i]==p4 && ap5[i]==p1
+||   ap2[i]==p23 && ap3[i]==p4 && ap4[i]==p1 && ap5[i]==p15)
+
+||
+(ap1[i]==p23 && ap6[i]==p1)
+ && (ap2[i]==p4 && ap3[i]==p8 && ap4[i]==p15 && ap5[i]==p9
+||   ap2[i]==p8 && ap3[i]==p15 && ap4[i]==p9 && ap5[i]==p4
+||   ap2[i]==p15 && ap3[i]==p9 && ap4[i]==p4 && ap5[i]==p8
+||   ap2[i]==p9 && ap3[i]==p4 && ap4[i]==p8 && ap5[i]==p15)
+
+||
+(ap1[i]==p9 && ap6[i]==p8)
+ && (ap2[i]==p4 && ap3[i]==p23 && ap4[i]==p15 && ap5[i]==p1
+||   ap2[i]==p23 && ap3[i]==p15 && ap4[i]==p1 && ap5[i]==p4
+||   ap2[i]==p15 && ap3[i]==p1 && ap4[i]==p4 && ap5[i]==p23
+||   ap2[i]==p1 && ap3[i]==p4 && ap4[i]==p23 && ap5[i]==p15)
+
+||
+(ap1[i]==p15 && ap6[i]==p4)
+ && (ap2[i]==p1 && ap3[i]==p9 && ap4[i]==p23 && ap5[i]==p8
+||   ap2[i]==p9 && ap3[i]==p23 && ap4[i]==p8 && ap5[i]==p1
+||   ap2[i]==p23 && ap3[i]==p8 && ap4[i]==p1 && ap5[i]==p9
+||   ap2[i]==p8 && ap3[i]==p1 && ap4[i]==p9 && ap5[i]==p23)
+
+||
+     //15_
+(ap1[i]==p2 && ap6[i]==p17)
+ && (ap2[i]==p6 && ap3[i]==p11 && ap4[i]==p25 && ap5[i]==p14
+||   ap2[i]==p11 && ap3[i]==p25 && ap4[i]==p14 && ap5[i]==p6
+||   ap2[i]==p25 && ap3[i]==p14 && ap4[i]==p6 && ap5[i]==p11
+||   ap2[i]==p14 && ap3[i]==p6 && ap4[i]==p11 && ap5[i]==p25)
+
+||
+(ap1[i]==p6 && ap6[i]==p25)
+ && (ap2[i]==p2 && ap3[i]==p14 && ap4[i]==p17 && ap5[i]==p11
+||   ap2[i]==p14 && ap3[i]==p17 && ap4[i]==p11 && ap5[i]==p2
+||   ap2[i]==p17 && ap3[i]==p11 && ap4[i]==p2 && ap5[i]==p14
+||   ap2[i]==p11 && ap3[i]==p2 && ap4[i]==p14 && ap5[i]==p17)
+
+||
+(ap1[i]==p11 && ap6[i]==p14)
+ && (ap2[i]==p2 && ap3[i]==p6 && ap4[i]==p17 && ap5[i]==p25
+||   ap2[i]==p6 && ap3[i]==p17 && ap4[i]==p25 && ap5[i]==p2
+||   ap2[i]==p17 && ap3[i]==p25 && ap4[i]==p2 && ap5[i]==p6
+||   ap2[i]==p25 && ap3[i]==p2 && ap4[i]==p6 && ap5[i]==p17)
+
+||
+(ap1[i]==p25 && ap6[i]==p6)
+ && (ap2[i]==p2 && ap3[i]==p11 && ap4[i]==p17 && ap5[i]==p14
+||   ap2[i]==p11 && ap3[i]==p17 && ap4[i]==p14 && ap5[i]==p2
+||   ap2[i]==p17 && ap3[i]==p14 && ap4[i]==p2 && ap5[i]==p11
+||   ap2[i]==p14 && ap3[i]==p2 && ap4[i]==p11 && ap5[i]==p17)
+
+||
+(ap1[i]==p14 && ap6[i]==p11)
+ && (ap2[i]==p2 && ap3[i]==p25 && ap4[i]==p17 && ap5[i]==p6
+||   ap2[i]==p25 && ap3[i]==p17 && ap4[i]==p6 && ap5[i]==p2
+||   ap2[i]==p17 && ap3[i]==p6 && ap4[i]==p2 && ap5[i]==p25
+||   ap2[i]==p6 && ap3[i]==p2 && ap4[i]==p25 && ap5[i]==p17)
+
+||
+(ap1[i]==p17 && ap6[i]==p2)
+ && (ap2[i]==p6 && ap3[i]==p14 && ap4[i]==p25 && ap5[i]==p11
+||   ap2[i]==p14 && ap3[i]==p25 && ap4[i]==p11 && ap5[i]==p6
+||   ap2[i]==p25 && ap3[i]==p11 && ap4[i]==p6 && ap5[i]==p14
+||   ap2[i]==p11 && ap3[i]==p6 && ap4[i]==p14 && ap5[i]==p25)
+
+||
+     //16_
+(ap1[i]==p4 && ap6[i]==p15)
+ && (ap2[i]==p6 && ap3[i]==p13 && ap4[i]==p25 && ap5[i]==p12
+||   ap2[i]==p13 && ap3[i]==p25 && ap4[i]==p12 && ap5[i]==p6
+||   ap2[i]==p25 && ap3[i]==p12 && ap4[i]==p6 && ap5[i]==p13
+||   ap2[i]==p12 && ap3[i]==p6 && ap4[i]==p13 && ap5[i]==p25)
+
+||
+(ap1[i]==p6 && ap6[i]==p25)
+ && (ap2[i]==p4 && ap3[i]==p12 && ap4[i]==p15 && ap5[i]==p13
+||   ap2[i]==p12 && ap3[i]==p15 && ap4[i]==p13 && ap5[i]==p4
+||   ap2[i]==p15 && ap3[i]==p13 && ap4[i]==p4 && ap5[i]==p12
+||   ap2[i]==p13 && ap3[i]==p4 && ap4[i]==p12 && ap5[i]==p15)
+
+||
+(ap1[i]==p13 && ap6[i]==p12)
+ && (ap2[i]==p4 && ap3[i]==p6 && ap4[i]==p15 && ap5[i]==p25
+||   ap2[i]==p6 && ap3[i]==p15 && ap4[i]==p25 && ap5[i]==p4
+||   ap2[i]==p15 && ap3[i]==p25 && ap4[i]==p4 && ap5[i]==p6
+||   ap2[i]==p25 && ap3[i]==p4 && ap4[i]==p6 && ap5[i]==p15)
+
+||
+(ap1[i]==p25 && ap6[i]==p6)
+ && (ap2[i]==p4 && ap3[i]==p13 && ap4[i]==p15 && ap5[i]==p12
+||   ap2[i]==p13 && ap3[i]==p15 && ap4[i]==p12 && ap5[i]==p4
+||   ap2[i]==p15 && ap3[i]==p12 && ap4[i]==p4 && ap5[i]==p13
+||   ap2[i]==p12 && ap3[i]==p4 && ap4[i]==p13 && ap5[i]==p15)
+
+||
+(ap1[i]==p12 && ap6[i]==p13)
+ && (ap2[i]==p4 && ap3[i]==p25 && ap4[i]==p15 && ap5[i]==p6
+||   ap2[i]==p25 && ap3[i]==p15 && ap4[i]==p6 && ap5[i]==p4
+||   ap2[i]==p15 && ap3[i]==p6 && ap4[i]==p4 && ap5[i]==p25
+||   ap2[i]==p6 && ap3[i]==p4 && ap4[i]==p25 && ap5[i]==p15)
+
+||
+(ap1[i]==p15 && ap6[i]==p4)
+ && (ap2[i]==p6 && ap3[i]==p12 && ap4[i]==p25 && ap5[i]==p13
+||   ap2[i]==p12 && ap3[i]==p25 && ap4[i]==p13 && ap5[i]==p6
+||   ap2[i]==p25 && ap3[i]==p13 && ap4[i]==p6 && ap5[i]==p12
+||   ap2[i]==p13 && ap3[i]==p6 && ap4[i]==p12 && ap5[i]==p25)
+
+||
+     //17_
+(ap1[i]==p7 && ap6[i]==p14)
+ && (ap2[i]==p2 && ap3[i]==p26 && ap4[i]==p20 && ap5[i]==p3
+||   ap2[i]==p26 && ap3[i]==p20 && ap4[i]==p3 && ap5[i]==p2
+||   ap2[i]==p20 && ap3[i]==p3 && ap4[i]==p2 && ap5[i]==p26
+||   ap2[i]==p3 && ap3[i]==p2 && ap4[i]==p26 && ap5[i]==p20)
+
+||
+(ap1[i]==p2 && ap6[i]==p20)
+ && (ap2[i]==p7 && ap3[i]==p3 && ap4[i]==p14 && ap5[i]==p26
+||   ap2[i]==p3 && ap3[i]==p14 && ap4[i]==p26 && ap5[i]==p7
+||   ap2[i]==p14 && ap3[i]==p26 && ap4[i]==p7 && ap5[i]==p3
+||   ap2[i]==p26 && ap3[i]==p7 && ap4[i]==p3 && ap5[i]==p14)
+
+||
+(ap1[i]==p26 && ap6[i]==p3)
+ && (ap2[i]==p7 && ap3[i]==p2 && ap4[i]==p14 && ap5[i]==p20
+||   ap2[i]==p2 && ap3[i]==p14 && ap4[i]==p20 && ap5[i]==p7
+||   ap2[i]==p14 && ap3[i]==p20 && ap4[i]==p7 && ap5[i]==p2
+||   ap2[i]==p20 && ap3[i]==p7 && ap4[i]==p2 && ap5[i]==p14)
+
+||
+(ap1[i]==p20 && ap6[i]==p2)
+ && (ap2[i]==p7 && ap3[i]==p26 && ap4[i]==p14 && ap5[i]==p3
+||   ap2[i]==p26 && ap3[i]==p14 && ap4[i]==p3 && ap5[i]==p7
+||   ap2[i]==p14 && ap3[i]==p3 && ap4[i]==p7 && ap5[i]==p26
+||   ap2[i]==p3 && ap3[i]==p7 && ap4[i]==p26 && ap5[i]==p14)
+
+||
+(ap1[i]==p3 && ap6[i]==p26)
+ && (ap2[i]==p7 && ap3[i]==p20 && ap4[i]==p14 && ap5[i]==p2
+||   ap2[i]==p20 && ap3[i]==p14 && ap4[i]==p2 && ap5[i]==p7
+||   ap2[i]==p14 && ap3[i]==p2 && ap4[i]==p7 && ap5[i]==p20
+||   ap2[i]==p2 && ap3[i]==p7 && ap4[i]==p20 && ap5[i]==p14)
+
+||
+(ap1[i]==p14 && ap6[i]==p7)
+ && (ap2[i]==p2 && ap3[i]==p3 && ap4[i]==p20 && ap5[i]==p26
+||   ap2[i]==p3 && ap3[i]==p20 && ap4[i]==p26 && ap5[i]==p2
+||   ap2[i]==p20 && ap3[i]==p26 && ap4[i]==p2 && ap5[i]==p3
+||   ap2[i]==p26 && ap3[i]==p2 && ap4[i]==p3 && ap5[i]==p20)
+
+||
+     //18_
+(ap1[i]==p8 && ap6[i]==p13)
+ && (ap2[i]==p3 && ap3[i]==p22 && ap4[i]==p26 && ap5[i]==p4
+||   ap2[i]==p22 && ap3[i]==p26 && ap4[i]==p4 && ap5[i]==p3
+||   ap2[i]==p26 && ap3[i]==p4 && ap4[i]==p3 && ap5[i]==p22
+||   ap2[i]==p4 && ap3[i]==p3 && ap4[i]==p22 && ap5[i]==p26)
+
+||
+(ap1[i]==p3 && ap6[i]==p26)
+ && (ap2[i]==p8 && ap3[i]==p4 && ap4[i]==p13 && ap5[i]==p22
+||   ap2[i]==p4 && ap3[i]==p13 && ap4[i]==p22 && ap5[i]==p8
+||   ap2[i]==p13 && ap3[i]==p22 && ap4[i]==p8 && ap5[i]==p4
+||   ap2[i]==p22 && ap3[i]==p8 && ap4[i]==p4 && ap5[i]==p13)
+
+||
+(ap1[i]==p22 && ap6[i]==p4)
+ && (ap2[i]==p8 && ap3[i]==p3 && ap4[i]==p13 && ap5[i]==p26
+||   ap2[i]==p3 && ap3[i]==p13 && ap4[i]==p26 && ap5[i]==p8
+||   ap2[i]==p13 && ap3[i]==p26 && ap4[i]==p8 && ap5[i]==p3
+||   ap2[i]==p26 && ap3[i]==p8 && ap4[i]==p3 && ap5[i]==p13)
+
+||
+(ap1[i]==p26 && ap6[i]==p3)
+ && (ap2[i]==p8 && ap3[i]==p22 && ap4[i]==p13 && ap5[i]==p4
+||   ap2[i]==p22 && ap3[i]==p13 && ap4[i]==p4 && ap5[i]==p8
+||   ap2[i]==p13 && ap3[i]==p4 && ap4[i]==p8 && ap5[i]==p22
+||   ap2[i]==p4 && ap3[i]==p8 && ap4[i]==p22 && ap5[i]==p13)
+
+||
+(ap1[i]==p4 && ap6[i]==p22)
+ && (ap2[i]==p8 && ap3[i]==p26 && ap4[i]==p13 && ap5[i]==p3
+||   ap2[i]==p26 && ap3[i]==p13 && ap4[i]==p3 && ap5[i]==p8
+||   ap2[i]==p13 && ap3[i]==p3 && ap4[i]==p8 && ap5[i]==p26
+||   ap2[i]==p3 && ap3[i]==p8 && ap4[i]==p26 && ap5[i]==p13)
+
+||
+(ap1[i]==p13 && ap6[i]==p8)
+ && (ap2[i]==p3 && ap3[i]==p4 && ap4[i]==p26 && ap5[i]==p22
+||   ap2[i]==p4 && ap3[i]==p26 && ap4[i]==p22 && ap5[i]==p3
+||   ap2[i]==p26 && ap3[i]==p22 && ap4[i]==p3 && ap5[i]==p4
+||   ap2[i]==p22 && ap3[i]==p3 && ap4[i]==p4 && ap5[i]==p26)
+
+||
+     //19_
+(ap1[i]==p9 && ap6[i]==p12)
+ && (ap2[i]==p4 && ap3[i]==p24 && ap4[i]==p22 && ap5[i]==p5
+||   ap2[i]==p24 && ap3[i]==p22 && ap4[i]==p5 && ap5[i]==p4
+||   ap2[i]==p22 && ap3[i]==p5 && ap4[i]==p4 && ap5[i]==p24
+||   ap2[i]==p5 && ap3[i]==p4 && ap4[i]==p24 && ap5[i]==p22)
+
+||
+(ap1[i]==p4 && ap6[i]==p22)
+ && (ap2[i]==p9 && ap3[i]==p5 && ap4[i]==p12 && ap5[i]==p24
+||   ap2[i]==p5 && ap3[i]==p12 && ap4[i]==p24 && ap5[i]==p9
+||   ap2[i]==p12 && ap3[i]==p24 && ap4[i]==p9 && ap5[i]==p5
+||   ap2[i]==p24 && ap3[i]==p9 && ap4[i]==p5 && ap5[i]==p12)
+
+||
+(ap1[i]==p24 && ap6[i]==p5)
+ && (ap2[i]==p9 && ap3[i]==p4 && ap4[i]==p12 && ap5[i]==p22
+||   ap2[i]==p4 && ap3[i]==p12 && ap4[i]==p22 && ap5[i]==p9
+||   ap2[i]==p12 && ap3[i]==p22 && ap4[i]==p9 && ap5[i]==p4
+||   ap2[i]==p22 && ap3[i]==p9 && ap4[i]==p4 && ap5[i]==p12)
+
+||
+(ap1[i]==p22 && ap6[i]==p4)
+ && (ap2[i]==p9 && ap3[i]==p24 && ap4[i]==p12 && ap5[i]==p5
+||   ap2[i]==p24 && ap3[i]==p12 && ap4[i]==p5 && ap5[i]==p9
+||   ap2[i]==p12 && ap3[i]==p5 && ap4[i]==p9 && ap5[i]==p24
+||   ap2[i]==p5 && ap3[i]==p9 && ap4[i]==p24 && ap5[i]==p12)
+
+||
+(ap1[i]==p5 && ap6[i]==p24)
+ && (ap2[i]==p9 && ap3[i]==p22 && ap4[i]==p12 && ap5[i]==p4
+||   ap2[i]==p22 && ap3[i]==p12 && ap4[i]==p4 && ap5[i]==p9
+||   ap2[i]==p12 && ap3[i]==p4 && ap4[i]==p9 && ap5[i]==p22
+||   ap2[i]==p4 && ap3[i]==p9 && ap4[i]==p22 && ap5[i]==p12)
+
+||
+(ap1[i]==p12 && ap6[i]==p9)
+ && (ap2[i]==p4 && ap3[i]==p5 && ap4[i]==p22 && ap5[i]==p24
+||   ap2[i]==p5 && ap3[i]==p22 && ap4[i]==p24 && ap5[i]==p4
+||   ap2[i]==p22 && ap3[i]==p24 && ap4[i]==p4 && ap5[i]==p5
+||   ap2[i]==p24 && ap3[i]==p4 && ap4[i]==p5 && ap5[i]==p22)
+
+||
+     //20_
+(ap1[i]==p10 && ap6[i]==p11)
+ && (ap2[i]==p2 && ap3[i]==p5 && ap4[i]==p20 && ap5[i]==p24
+||   ap2[i]==p5 && ap3[i]==p20 && ap4[i]==p24 && ap5[i]==p2
+||   ap2[i]==p20 && ap3[i]==p24 && ap4[i]==p2 && ap5[i]==p5
+||   ap2[i]==p24 && ap3[i]==p2 && ap4[i]==p5 && ap5[i]==p20)
+
+||
+(ap1[i]==p2 && ap6[i]==p20)
+ && (ap2[i]==p10 && ap3[i]==p24 && ap4[i]==p11 && ap5[i]==p5
+||   ap2[i]==p24 && ap3[i]==p11 && ap4[i]==p5 && ap5[i]==p10
+||   ap2[i]==p11 && ap3[i]==p5 && ap4[i]==p10 && ap5[i]==p24
+||   ap2[i]==p5 && ap3[i]==p10 && ap4[i]==p24 && ap5[i]==p11)
+
+||
+(ap1[i]==p5 && ap6[i]==p24)
+ && (ap2[i]==p10 && ap3[i]==p2 && ap4[i]==p11 && ap5[i]==p20
+||   ap2[i]==p2 && ap3[i]==p11 && ap4[i]==p20 && ap5[i]==p10
+||   ap2[i]==p11 && ap3[i]==p20 && ap4[i]==p10 && ap5[i]==p2
+||   ap2[i]==p20 && ap3[i]==p10 && ap4[i]==p2 && ap5[i]==p11)
+
+||
+(ap1[i]==p20 && ap6[i]==p2)
+ && (ap2[i]==p10 && ap3[i]==p5 && ap4[i]==p11 && ap5[i]==p24
+||   ap2[i]==p5 && ap3[i]==p11 && ap4[i]==p24 && ap5[i]==p10
+||   ap2[i]==p11 && ap3[i]==p24 && ap4[i]==p10 && ap5[i]==p5
+||   ap2[i]==p24 && ap3[i]==p10 && ap4[i]==p5 && ap5[i]==p11)
+
+||
+(ap1[i]==p24 && ap6[i]==p5)
+ && (ap2[i]==p10 && ap3[i]==p20 && ap4[i]==p11 && ap5[i]==p2
+||   ap2[i]==p20 && ap3[i]==p11 && ap4[i]==p2 && ap5[i]==p10
+||   ap2[i]==p11 && ap3[i]==p2 && ap4[i]==p10 && ap5[i]==p20
+||   ap2[i]==p2 && ap3[i]==p10 && ap4[i]==p20 && ap5[i]==p11)
+
+||
+(ap1[i]==p11 && ap6[i]==p10)
+ && (ap2[i]==p2 && ap3[i]==p24 && ap4[i]==p20 && ap5[i]==p5
+||   ap2[i]==p24 && ap3[i]==p20 && ap4[i]==p5 && ap5[i]==p2
+||   ap2[i]==p20 && ap3[i]==p5 && ap4[i]==p2 && ap5[i]==p24
+||   ap2[i]==p5 && ap3[i]==p2 && ap4[i]==p24 && ap5[i]==p20)
+
+||
+     //21_
+(ap1[i]==p7 && ap6[i]==p14)
+ && (ap2[i]==p17 && ap3[i]==p27 && ap4[i]==p29 && ap5[i]==p18
+||   ap2[i]==p27 && ap3[i]==p29 && ap4[i]==p18 && ap5[i]==p17
+||   ap2[i]==p29 && ap3[i]==p18 && ap4[i]==p17 && ap5[i]==p27
+||   ap2[i]==p18 && ap3[i]==p17 && ap4[i]==p27 && ap5[i]==p29)
+
+||
+(ap1[i]==p17 && ap6[i]==p29)
+ && (ap2[i]==p7 && ap3[i]==p18 && ap4[i]==p14 && ap5[i]==p27
+||   ap2[i]==p18 && ap3[i]==p14 && ap4[i]==p27 && ap5[i]==p7
+||   ap2[i]==p14 && ap3[i]==p27 && ap4[i]==p7 && ap5[i]==p18
+||   ap2[i]==p27 && ap3[i]==p7 && ap4[i]==p18 && ap5[i]==p14)
+
+||
+(ap1[i]==p27 && ap6[i]==p18)
+ && (ap2[i]==p7 && ap3[i]==p17 && ap4[i]==p14 && ap5[i]==p29
+||   ap2[i]==p17 && ap3[i]==p14 && ap4[i]==p29 && ap5[i]==p7
+||   ap2[i]==p14 && ap3[i]==p29 && ap4[i]==p7 && ap5[i]==p17
+||   ap2[i]==p29 && ap3[i]==p7 && ap4[i]==p17 && ap5[i]==p14)
+
+||
+(ap1[i]==p29 && ap6[i]==p17)
+ && (ap2[i]==p7 && ap3[i]==p27 && ap4[i]==p14 && ap5[i]==p18
+||   ap2[i]==p27 && ap3[i]==p14 && ap4[i]==p18 && ap5[i]==p7
+||   ap2[i]==p14 && ap3[i]==p18 && ap4[i]==p7 && ap5[i]==p27
+||   ap2[i]==p18 && ap3[i]==p7 && ap4[i]==p27 && ap5[i]==p14)
+
+||
+(ap1[i]==p18 && ap6[i]==p27)
+ && (ap2[i]==p7 && ap3[i]==p29 && ap4[i]==p14 && ap5[i]==p17
+||   ap2[i]==p29 && ap3[i]==p14 && ap4[i]==p17 && ap5[i]==p7
+||   ap2[i]==p14 && ap3[i]==p17 && ap4[i]==p7 && ap5[i]==p29
+||   ap2[i]==p17 && ap3[i]==p7 && ap4[i]==p29 && ap5[i]==p14)
+
+||
+(ap1[i]==p14 && ap6[i]==p7)
+ && (ap2[i]==p17 && ap3[i]==p18 && ap4[i]==p29 && ap5[i]==p27
+||   ap2[i]==p18 && ap3[i]==p29 && ap4[i]==p27 && ap5[i]==p17
+||   ap2[i]==p29 && ap3[i]==p27 && ap4[i]==p17 && ap5[i]==p18
+||   ap2[i]==p27 && ap3[i]==p17 && ap4[i]==p18 && ap5[i]==p29)
+
+||
+     //22_
+(ap1[i]==p8 && ap6[i]==p13)
+ && (ap2[i]==p15 && ap3[i]==p18 && ap4[i]==p30 && ap5[i]==p27
+||   ap2[i]==p18 && ap3[i]==p30 && ap4[i]==p27 && ap5[i]==p15
+||   ap2[i]==p30 && ap3[i]==p27 && ap4[i]==p15 && ap5[i]==p18
+||   ap2[i]==p27 && ap3[i]==p15 && ap4[i]==p18 && ap5[i]==p30)
+
+||
+(ap1[i]==p15 && ap6[i]==p30)
+ && (ap2[i]==p8 && ap3[i]==p27 && ap4[i]==p13 && ap5[i]==p18
+||   ap2[i]==p27 && ap3[i]==p13 && ap4[i]==p18 && ap5[i]==p8
+||   ap2[i]==p13 && ap3[i]==p18 && ap4[i]==p8 && ap5[i]==p27
+||   ap2[i]==p18 && ap3[i]==p8 && ap4[i]==p27 && ap5[i]==p13)
+
+||
+(ap1[i]==p18 && ap6[i]==p27)
+ && (ap2[i]==p8 && ap3[i]==p15 && ap4[i]==p13 && ap5[i]==p30
+||   ap2[i]==p15 && ap3[i]==p13 && ap4[i]==p30 && ap5[i]==p8
+||   ap2[i]==p13 && ap3[i]==p30 && ap4[i]==p8 && ap5[i]==p15
+||   ap2[i]==p30 && ap3[i]==p8 && ap4[i]==p15 && ap5[i]==p13)
+
+||
+(ap1[i]==p30 && ap6[i]==p15)
+ && (ap2[i]==p8 && ap3[i]==p18 && ap4[i]==p13 && ap5[i]==p27
+||   ap2[i]==p18 && ap3[i]==p13 && ap4[i]==p27 && ap5[i]==p8
+||   ap2[i]==p13 && ap3[i]==p27 && ap4[i]==p8 && ap5[i]==p18
+||   ap2[i]==p27 && ap3[i]==p8 && ap4[i]==p18 && ap5[i]==p13)
+
+||
+(ap1[i]==p27 && ap6[i]==p18)
+ && (ap2[i]==p8 && ap3[i]==p30 && ap4[i]==p13 && ap5[i]==p15
+||   ap2[i]==p30 && ap3[i]==p13 && ap4[i]==p15 && ap5[i]==p8
+||   ap2[i]==p13 && ap3[i]==p15 && ap4[i]==p8 && ap5[i]==p30
+||   ap2[i]==p15 && ap3[i]==p8 && ap4[i]==p30 && ap5[i]==p13)
+
+||
+(ap1[i]==p13 && ap6[i]==p8)
+ && (ap2[i]==p15 && ap3[i]==p27 && ap4[i]==p30 && ap5[i]==p18
+||   ap2[i]==p27 && ap3[i]==p30 && ap4[i]==p18 && ap5[i]==p15
+||   ap2[i]==p30 && ap3[i]==p18 && ap4[i]==p15 && ap5[i]==p27
+||   ap2[i]==p18 && ap3[i]==p15 && ap4[i]==p27 && ap5[i]==p30)
+
+||
+     //23_
+(ap1[i]==p9 && ap6[i]==p12)
+ && (ap2[i]==p15 && ap3[i]==p28 && ap4[i]==p30 && ap5[i]==p16
+||   ap2[i]==p28 && ap3[i]==p30 && ap4[i]==p16 && ap5[i]==p15
+||   ap2[i]==p30 && ap3[i]==p16 && ap4[i]==p15 && ap5[i]==p28
+||   ap2[i]==p16 && ap3[i]==p15 && ap4[i]==p28 && ap5[i]==p30)
+
+||
+(ap1[i]==p15 && ap6[i]==p30)
+ && (ap2[i]==p9 && ap3[i]==p16 && ap4[i]==p12 && ap5[i]==p28
+||   ap2[i]==p16 && ap3[i]==p12 && ap4[i]==p28 && ap5[i]==p9
+||   ap2[i]==p12 && ap3[i]==p28 && ap4[i]==p9 && ap5[i]==p16
+||   ap2[i]==p28 && ap3[i]==p9 && ap4[i]==p16 && ap5[i]==p12)
+
+||
+(ap1[i]==p28 && ap6[i]==p16)
+ && (ap2[i]==p9 && ap3[i]==p15 && ap4[i]==p12 && ap5[i]==p30
+||   ap2[i]==p15 && ap3[i]==p12 && ap4[i]==p30 && ap5[i]==p9
+||   ap2[i]==p12 && ap3[i]==p30 && ap4[i]==p9 && ap5[i]==p15
+||   ap2[i]==p30 && ap3[i]==p9 && ap4[i]==p15 && ap5[i]==p12)
+
+||
+(ap1[i]==p30 && ap6[i]==p15)
+ && (ap2[i]==p9 && ap3[i]==p28 && ap4[i]==p12 && ap5[i]==p16
+||   ap2[i]==p28 && ap3[i]==p12 && ap4[i]==p16 && ap5[i]==p9
+||   ap2[i]==p12 && ap3[i]==p16 && ap4[i]==p9 && ap5[i]==p28
+||   ap2[i]==p16 && ap3[i]==p9 && ap4[i]==p28 && ap5[i]==p12)
+
+||
+(ap1[i]==p16 && ap6[i]==p28)
+ && (ap2[i]==p9 && ap3[i]==p30 && ap4[i]==p12 && ap5[i]==p15
+||   ap2[i]==p30 && ap3[i]==p12 && ap4[i]==p15 && ap5[i]==p9
+||   ap2[i]==p12 && ap3[i]==p15 && ap4[i]==p9 && ap5[i]==p30
+||   ap2[i]==p15 && ap3[i]==p9 && ap4[i]==p30 && ap5[i]==p12)
+
+||
+(ap1[i]==p12 && ap6[i]==p9)
+ && (ap2[i]==p15 && ap3[i]==p16 && ap4[i]==p30 && ap5[i]==p28
+||   ap2[i]==p16 && ap3[i]==p30 && ap4[i]==p28 && ap5[i]==p15
+||   ap2[i]==p30 && ap3[i]==p28 && ap4[i]==p15 && ap5[i]==p16
+||   ap2[i]==p28 && ap3[i]==p15 && ap4[i]==p16 && ap5[i]==p30)
+
+||
+     //24_
+(ap1[i]==p10 && ap6[i]==p11)
+ && (ap2[i]==p16 && ap3[i]==p29 && ap4[i]==p28 && ap5[i]==p17
+||   ap2[i]==p29 && ap3[i]==p28 && ap4[i]==p17 && ap5[i]==p16
+||   ap2[i]==p28 && ap3[i]==p17 && ap4[i]==p16 && ap5[i]==p29
+||   ap2[i]==p17 && ap3[i]==p16 && ap4[i]==p29 && ap5[i]==p28)
+
+||
+(ap1[i]==p16 && ap6[i]==p28)
+ && (ap2[i]==p10 && ap3[i]==p17 && ap4[i]==p11 && ap5[i]==p29
+||   ap2[i]==p17 && ap3[i]==p11 && ap4[i]==p29 && ap5[i]==p10
+||   ap2[i]==p11 && ap3[i]==p29 && ap4[i]==p10 && ap5[i]==p17
+||   ap2[i]==p29 && ap3[i]==p10 && ap4[i]==p17 && ap5[i]==p11)
+
+||
+(ap1[i]==p29 && ap6[i]==p17)
+ && (ap2[i]==p10 && ap3[i]==p16 && ap4[i]==p11 && ap5[i]==p28
+||   ap2[i]==p16 && ap3[i]==p11 && ap4[i]==p28 && ap5[i]==p10
+||   ap2[i]==p11 && ap3[i]==p28 && ap4[i]==p10 && ap5[i]==p16
+||   ap2[i]==p28 && ap3[i]==p10 && ap4[i]==p16 && ap5[i]==p11)
+
+||
+(ap1[i]==p28 && ap6[i]==p16)
+ && (ap2[i]==p10 && ap3[i]==p29 && ap4[i]==p11 && ap5[i]==p17
+||   ap2[i]==p29 && ap3[i]==p11 && ap4[i]==p17 && ap5[i]==p10
+||   ap2[i]==p11 && ap3[i]==p17 && ap4[i]==p10 && ap5[i]==p29
+||   ap2[i]==p17 && ap3[i]==p10 && ap4[i]==p29 && ap5[i]==p11)
+
+||
+(ap1[i]==p17 && ap6[i]==p29)
+ && (ap2[i]==p10 && ap3[i]==p28 && ap4[i]==p11 && ap5[i]==p16
+||   ap2[i]==p28 && ap3[i]==p11 && ap4[i]==p16 && ap5[i]==p10
+||   ap2[i]==p11 && ap3[i]==p16 && ap4[i]==p10 && ap5[i]==p28
+||   ap2[i]==p16 && ap3[i]==p10 && ap4[i]==p28 && ap5[i]==p11)
+
+||
+(ap1[i]==p11 && ap6[i]==p10)
+ && (ap2[i]==p16 && ap3[i]==p17 && ap4[i]==p28 && ap5[i]==p29
+||   ap2[i]==p17 && ap3[i]==p28 && ap4[i]==p29 && ap5[i]==p16
+||   ap2[i]==p28 && ap3[i]==p29 && ap4[i]==p16 && ap5[i]==p17
+||   ap2[i]==p29 && ap3[i]==p16 && ap4[i]==p17 && ap5[i]==p28)
+
+||
+     //25_
+(ap1[i]==p7 && ap6[i]==p10)
+ && (ap2[i]==p19 && ap3[i]==p20 && ap4[i]==p31 && ap5[i]==p29
+||   ap2[i]==p20 && ap3[i]==p31 && ap4[i]==p29 && ap5[i]==p19
+||   ap2[i]==p31 && ap3[i]==p29 && ap4[i]==p19 && ap5[i]==p20
+||   ap2[i]==p29 && ap3[i]==p19 && ap4[i]==p20 && ap5[i]==p31)
+
+||
+(ap1[i]==p19 && ap6[i]==p31)
+ && (ap2[i]==p7 && ap3[i]==p29 && ap4[i]==p10 && ap5[i]==p20
+||   ap2[i]==p29 && ap3[i]==p10 && ap4[i]==p20 && ap5[i]==p7
+||   ap2[i]==p10 && ap3[i]==p20 && ap4[i]==p7 && ap5[i]==p29
+||   ap2[i]==p20 && ap3[i]==p7 && ap4[i]==p29 && ap5[i]==p10)
+
+||
+(ap1[i]==p20 && ap6[i]==p29)
+ && (ap2[i]==p7 && ap3[i]==p19 && ap4[i]==p10 && ap5[i]==p31
+||   ap2[i]==p19 && ap3[i]==p10 && ap4[i]==p31 && ap5[i]==p7
+||   ap2[i]==p10 && ap3[i]==p31 && ap4[i]==p7 && ap5[i]==p19
+||   ap2[i]==p31 && ap3[i]==p7 && ap4[i]==p19 && ap5[i]==p10)
+
+||
+(ap1[i]==p31 && ap6[i]==p19)
+ && (ap2[i]==p7 && ap3[i]==p20 && ap4[i]==p10 && ap5[i]==p29
+||   ap2[i]==p20 && ap3[i]==p10 && ap4[i]==p29 && ap5[i]==p7
+||   ap2[i]==p10 && ap3[i]==p29 && ap4[i]==p7 && ap5[i]==p20
+||   ap2[i]==p29 && ap3[i]==p7 && ap4[i]==p20 && ap5[i]==p10)
+
+||
+(ap1[i]==p29 && ap6[i]==p20)
+ && (ap2[i]==p7 && ap3[i]==p31 && ap4[i]==p10 && ap5[i]==p19
+||   ap2[i]==p31 && ap3[i]==p10 && ap4[i]==p19 && ap5[i]==p7
+||   ap2[i]==p10 && ap3[i]==p19 && ap4[i]==p7 && ap5[i]==p31
+||   ap2[i]==p19 && ap3[i]==p7 && ap4[i]==p31 && ap5[i]==p10)
+
+||
+(ap1[i]==p10 && ap6[i]==p7)
+ && (ap2[i]==p19 && ap3[i]==p29 && ap4[i]==p31 && ap5[i]==p20
+||   ap2[i]==p29 && ap3[i]==p31 && ap4[i]==p20 && ap5[i]==p19
+||   ap2[i]==p31 && ap3[i]==p20 && ap4[i]==p19 && ap5[i]==p29
+||   ap2[i]==p20 && ap3[i]==p19 && ap4[i]==p29 && ap5[i]==p31)
+
+||
+     //26_
+(ap1[i]==p8 && ap6[i]==p9)
+ && (ap2[i]==p19 && ap3[i]==p30 && ap4[i]==p31 && ap5[i]==p22
+||   ap2[i]==p30 && ap3[i]==p31 && ap4[i]==p22 && ap5[i]==p19
+||   ap2[i]==p31 && ap3[i]==p22 && ap4[i]==p19 && ap5[i]==p30
+||   ap2[i]==p22 && ap3[i]==p19 && ap4[i]==p30 && ap5[i]==p31)
+
+||
+(ap1[i]==p19 && ap6[i]==p31)
+ && (ap2[i]==p8 && ap3[i]==p22 && ap4[i]==p9 && ap5[i]==p30
+||   ap2[i]==p22 && ap3[i]==p9 && ap4[i]==p30 && ap5[i]==p8
+||   ap2[i]==p9 && ap3[i]==p30 && ap4[i]==p8 && ap5[i]==p22
+||   ap2[i]==p30 && ap3[i]==p8 && ap4[i]==p22 && ap5[i]==p9)
+
+||
+(ap1[i]==p30 && ap6[i]==p22)
+ && (ap2[i]==p8 && ap3[i]==p19 && ap4[i]==p9 && ap5[i]==p31
+||   ap2[i]==p19 && ap3[i]==p9 && ap4[i]==p31 && ap5[i]==p8
+||   ap2[i]==p9 && ap3[i]==p31 && ap4[i]==p8 && ap5[i]==p19
+||   ap2[i]==p31 && ap3[i]==p8 && ap4[i]==p19 && ap5[i]==p9)
+
+||
+(ap1[i]==p31 && ap6[i]==p19)
+ && (ap2[i]==p8 && ap3[i]==p30 && ap4[i]==p9 && ap5[i]==p22
+||   ap2[i]==p30 && ap3[i]==p9 && ap4[i]==p22 && ap5[i]==p8
+||   ap2[i]==p9 && ap3[i]==p22 && ap4[i]==p8 && ap5[i]==p30
+||   ap2[i]==p22 && ap3[i]==p8 && ap4[i]==p30 && ap5[i]==p9)
+
+||
+(ap1[i]==p22 && ap6[i]==p30)
+ && (ap2[i]==p8 && ap3[i]==p31 && ap4[i]==p9 && ap5[i]==p19
+||   ap2[i]==p31 && ap3[i]==p9 && ap4[i]==p19 && ap5[i]==p8
+||   ap2[i]==p9 && ap3[i]==p19 && ap4[i]==p8 && ap5[i]==p31
+||   ap2[i]==p19 && ap3[i]==p8 && ap4[i]==p31 && ap5[i]==p9)
+
+||
+(ap1[i]==p9 && ap6[i]==p8)
+ && (ap2[i]==p19 && ap3[i]==p22 && ap4[i]==p31 && ap5[i]==p30
+||   ap2[i]==p22 && ap3[i]==p31 && ap4[i]==p30 && ap5[i]==p19
+||   ap2[i]==p31 && ap3[i]==p30 && ap4[i]==p19 && ap5[i]==p22
+||   ap2[i]==p30 && ap3[i]==p19 && ap4[i]==p22 && ap5[i]==p31)
+
+||
+     //27_
+(ap1[i]==p12 && ap6[i]==p13)
+ && (ap2[i]==p21 && ap3[i]==p22 && ap4[i]==p32 && ap5[i]==p30
+||   ap2[i]==p22 && ap3[i]==p32 && ap4[i]==p30 && ap5[i]==p21
+||   ap2[i]==p32 && ap3[i]==p30 && ap4[i]==p21 && ap5[i]==p22
+||   ap2[i]==p30 && ap3[i]==p21 && ap4[i]==p22 && ap5[i]==p32)
+
+||
+(ap1[i]==p21 && ap6[i]==p32)
+ && (ap2[i]==p12 && ap3[i]==p30 && ap4[i]==p13 && ap5[i]==p22
+||   ap2[i]==p30 && ap3[i]==p13 && ap4[i]==p22 && ap5[i]==p12
+||   ap2[i]==p13 && ap3[i]==p22 && ap4[i]==p12 && ap5[i]==p30
+||   ap2[i]==p22 && ap3[i]==p12 && ap4[i]==p30 && ap5[i]==p13)
+
+||
+(ap1[i]==p22 && ap6[i]==p30)
+ && (ap2[i]==p12 && ap3[i]==p21 && ap4[i]==p13 && ap5[i]==p32
+||   ap2[i]==p21 && ap3[i]==p13 && ap4[i]==p32 && ap5[i]==p12
+||   ap2[i]==p13 && ap3[i]==p32 && ap4[i]==p12 && ap5[i]==p21
+||   ap2[i]==p32 && ap3[i]==p12 && ap4[i]==p21 && ap5[i]==p13)
+
+||
+(ap1[i]==p32 && ap6[i]==p21)
+ && (ap2[i]==p12 && ap3[i]==p22 && ap4[i]==p13 && ap5[i]==p30
+||   ap2[i]==p22 && ap3[i]==p13 && ap4[i]==p30 && ap5[i]==p12
+||   ap2[i]==p13 && ap3[i]==p30 && ap4[i]==p12 && ap5[i]==p22
+||   ap2[i]==p30 && ap3[i]==p12 && ap4[i]==p22 && ap5[i]==p13)
+
+||
+(ap1[i]==p30 && ap6[i]==p22)
+ && (ap2[i]==p12 && ap3[i]==p32 && ap4[i]==p13 && ap5[i]==p21
+||   ap2[i]==p32 && ap3[i]==p13 && ap4[i]==p21 && ap5[i]==p12
+||   ap2[i]==p13 && ap3[i]==p21 && ap4[i]==p12 && ap5[i]==p32
+||   ap2[i]==p21 && ap3[i]==p12 && ap4[i]==p32 && ap5[i]==p13)
+
+||
+(ap1[i]==p13 && ap6[i]==p12)
+ && (ap2[i]==p21 && ap3[i]==p30 && ap4[i]==p32 && ap5[i]==p22
+||   ap2[i]==p30 && ap3[i]==p32 && ap4[i]==p22 && ap5[i]==p21
+||   ap2[i]==p32 && ap3[i]==p22 && ap4[i]==p21 && ap5[i]==p30
+||   ap2[i]==p22 && ap3[i]==p21 && ap4[i]==p30 && ap5[i]==p32)
+
+||
+     //28_
+(ap1[i]==p11 && ap6[i]==p14)
+ && (ap2[i]==p20 && ap3[i]==p21 && ap4[i]==p29 && ap5[i]==p32
+||   ap2[i]==p21 && ap3[i]==p29 && ap4[i]==p32 && ap5[i]==p20
+||   ap2[i]==p29 && ap3[i]==p32 && ap4[i]==p20 && ap5[i]==p21
+||   ap2[i]==p32 && ap3[i]==p20 && ap4[i]==p21 && ap5[i]==p29)
+
+||
+(ap1[i]==p20 && ap6[i]==p29)
+ && (ap2[i]==p11 && ap3[i]==p32 && ap4[i]==p14 && ap5[i]==p21
+||   ap2[i]==p32 && ap3[i]==p14 && ap4[i]==p21 && ap5[i]==p11
+||   ap2[i]==p14 && ap3[i]==p21 && ap4[i]==p11 && ap5[i]==p32
+||   ap2[i]==p21 && ap3[i]==p11 && ap4[i]==p32 && ap5[i]==p14)
+
+||
+(ap1[i]==p21 && ap6[i]==p32)
+ && (ap2[i]==p11 && ap3[i]==p20 && ap4[i]==p14 && ap5[i]==p29
+||   ap2[i]==p20 && ap3[i]==p14 && ap4[i]==p29 && ap5[i]==p11
+||   ap2[i]==p14 && ap3[i]==p29 && ap4[i]==p11 && ap5[i]==p20
+||   ap2[i]==p29 && ap3[i]==p11 && ap4[i]==p20 && ap5[i]==p14)
+
+||
+(ap1[i]==p29 && ap6[i]==p20)
+ && (ap2[i]==p11 && ap3[i]==p21 && ap4[i]==p14 && ap5[i]==p32
+||   ap2[i]==p21 && ap3[i]==p14 && ap4[i]==p32 && ap5[i]==p11
+||   ap2[i]==p14 && ap3[i]==p32 && ap4[i]==p11 && ap5[i]==p21
+||   ap2[i]==p32 && ap3[i]==p11 && ap4[i]==p21 && ap5[i]==p14)
+
+||
+(ap1[i]==p32 && ap6[i]==p21)
+ && (ap2[i]==p11 && ap3[i]==p29 && ap4[i]==p14 && ap5[i]==p20
+||   ap2[i]==p29 && ap3[i]==p14 && ap4[i]==p20 && ap5[i]==p11
+||   ap2[i]==p14 && ap3[i]==p20 && ap4[i]==p11 && ap5[i]==p29
+||   ap2[i]==p20 && ap3[i]==p11 && ap4[i]==p29 && ap5[i]==p14)
+
+||
+(ap1[i]==p14 && ap6[i]==p11)
+ && (ap2[i]==p20 && ap3[i]==p32 && ap4[i]==p29 && ap5[i]==p21
+||   ap2[i]==p32 && ap3[i]==p29 && ap4[i]==p21 && ap5[i]==p20
+||   ap2[i]==p29 && ap3[i]==p21 && ap4[i]==p20 && ap5[i]==p32
+||   ap2[i]==p21 && ap3[i]==p20 && ap4[i]==p32 && ap5[i]==p29)
+
+||
+     //29_
+(ap1[i]==p7 && ap6[i]==p8)
+ && (ap2[i]==p23 && ap3[i]==p26 && ap4[i]==p31 && ap5[i]==p27
+||   ap2[i]==p26 && ap3[i]==p31 && ap4[i]==p27 && ap5[i]==p23
+||   ap2[i]==p31 && ap3[i]==p27 && ap4[i]==p23 && ap5[i]==p26
+||   ap2[i]==p27 && ap3[i]==p23 && ap4[i]==p26 && ap5[i]==p31)
+
+||
+(ap1[i]==p23 && ap6[i]==p31)
+ && (ap2[i]==p7 && ap3[i]==p27 && ap4[i]==p8 && ap5[i]==p26
+||   ap2[i]==p27 && ap3[i]==p8 && ap4[i]==p26 && ap5[i]==p7
+||   ap2[i]==p8 && ap3[i]==p26 && ap4[i]==p7 && ap5[i]==p27
+||   ap2[i]==p26 && ap3[i]==p7 && ap4[i]==p27 && ap5[i]==p8)
+
+||
+(ap1[i]==p26 && ap6[i]==p27)
+ && (ap2[i]==p7 && ap3[i]==p23 && ap4[i]==p8 && ap5[i]==p31
+||   ap2[i]==p23 && ap3[i]==p8 && ap4[i]==p31 && ap5[i]==p7
+||   ap2[i]==p8 && ap3[i]==p31 && ap4[i]==p7 && ap5[i]==p23
+||   ap2[i]==p31 && ap3[i]==p7 && ap4[i]==p23 && ap5[i]==p8)
+
+||
+(ap1[i]==p31 && ap6[i]==p23)
+ && (ap2[i]==p7 && ap3[i]==p26 && ap4[i]==p8 && ap5[i]==p27
+||   ap2[i]==p26 && ap3[i]==p8 && ap4[i]==p27 && ap5[i]==p7
+||   ap2[i]==p8 && ap3[i]==p27 && ap4[i]==p7 && ap5[i]==p26
+||   ap2[i]==p27 && ap3[i]==p7 && ap4[i]==p26 && ap5[i]==p8)
+
+||
+(ap1[i]==p27 && ap6[i]==p26)
+ && (ap2[i]==p7 && ap3[i]==p31 && ap4[i]==p8 && ap5[i]==p23
+||   ap2[i]==p31 && ap3[i]==p8 && ap4[i]==p23 && ap5[i]==p7
+||   ap2[i]==p8 && ap3[i]==p23 && ap4[i]==p7 && ap5[i]==p31
+||   ap2[i]==p23 && ap3[i]==p7 && ap4[i]==p31 && ap5[i]==p8)
+
+||
+(ap1[i]==p8 && ap6[i]==p7)
+ && (ap2[i]==p23 && ap3[i]==p27 && ap4[i]==p31 && ap5[i]==p26
+||   ap2[i]==p27 && ap3[i]==p31 && ap4[i]==p26 && ap5[i]==p23
+||   ap2[i]==p31 && ap3[i]==p26 && ap4[i]==p23 && ap5[i]==p27
+||   ap2[i]==p26 && ap3[i]==p23 && ap4[i]==p27 && ap5[i]==p31)
+
+||
+     //30_
+(ap1[i]==p9 && ap6[i]==p10)
+ && (ap2[i]==p23 && ap3[i]==p28 && ap4[i]==p31 && ap5[i]==p24
+||   ap2[i]==p28 && ap3[i]==p31 && ap4[i]==p24 && ap5[i]==p23
+||   ap2[i]==p31 && ap3[i]==p24 && ap4[i]==p23 && ap5[i]==p28
+||   ap2[i]==p24 && ap3[i]==p23 && ap4[i]==p28 && ap5[i]==p31)
+
+||
+(ap1[i]==p23 && ap6[i]==p31)
+ && (ap2[i]==p9 && ap3[i]==p24 && ap4[i]==p10 && ap5[i]==p28
+||   ap2[i]==p24 && ap3[i]==p10 && ap4[i]==p28 && ap5[i]==p9
+||   ap2[i]==p10 && ap3[i]==p28 && ap4[i]==p9 && ap5[i]==p24
+||   ap2[i]==p28 && ap3[i]==p9 && ap4[i]==p24 && ap5[i]==p10)
+
+||
+(ap1[i]==p28 && ap6[i]==p24)
+ && (ap2[i]==p9 && ap3[i]==p23 && ap4[i]==p10 && ap5[i]==p31
+||   ap2[i]==p23 && ap3[i]==p10 && ap4[i]==p31 && ap5[i]==p9
+||   ap2[i]==p10 && ap3[i]==p31 && ap4[i]==p9 && ap5[i]==p23
+||   ap2[i]==p31 && ap3[i]==p9 && ap4[i]==p23 && ap5[i]==p10)
+
+||
+(ap1[i]==p31 && ap6[i]==p23)
+ && (ap2[i]==p9 && ap3[i]==p28 && ap4[i]==p10 && ap5[i]==p24
+||   ap2[i]==p28 && ap3[i]==p10 && ap4[i]==p24 && ap5[i]==p9
+||   ap2[i]==p10 && ap3[i]==p24 && ap4[i]==p9 && ap5[i]==p28
+||   ap2[i]==p24 && ap3[i]==p9 && ap4[i]==p28 && ap5[i]==p10)
+
+||
+(ap1[i]==p24 && ap6[i]==p28)
+ && (ap2[i]==p9 && ap3[i]==p31 && ap4[i]==p10 && ap5[i]==p23
+||   ap2[i]==p31 && ap3[i]==p10 && ap4[i]==p23 && ap5[i]==p9
+||   ap2[i]==p10 && ap3[i]==p23 && ap4[i]==p9 && ap5[i]==p31
+||   ap2[i]==p23 && ap3[i]==p9 && ap4[i]==p31 && ap5[i]==p10)
+
+||
+(ap1[i]==p10 && ap6[i]==p9)
+ && (ap2[i]==p23 && ap3[i]==p24 && ap4[i]==p31 && ap5[i]==p28
+||   ap2[i]==p24 && ap3[i]==p31 && ap4[i]==p28 && ap5[i]==p23
+||   ap2[i]==p31 && ap3[i]==p28 && ap4[i]==p23 && ap5[i]==p24
+||   ap2[i]==p28 && ap3[i]==p23 && ap4[i]==p24 && ap5[i]==p31)
+
+||
+     //31_
+(ap1[i]==p13 && ap6[i]==p14)
+ && (ap2[i]==p25 && ap3[i]==p27 && ap4[i]==p32 && ap5[i]==p26
+||   ap2[i]==p27 && ap3[i]==p32 && ap4[i]==p26 && ap5[i]==p25
+||   ap2[i]==p32 && ap3[i]==p26 && ap4[i]==p25 && ap5[i]==p27
+||   ap2[i]==p26 && ap3[i]==p25 && ap4[i]==p27 && ap5[i]==p32)
+
+||
+(ap1[i]==p25 && ap6[i]==p32)
+ && (ap2[i]==p13 && ap3[i]==p26 && ap4[i]==p14 && ap5[i]==p27
+||   ap2[i]==p26 && ap3[i]==p14 && ap4[i]==p27 && ap5[i]==p13
+||   ap2[i]==p14 && ap3[i]==p27 && ap4[i]==p13 && ap5[i]==p26
+||   ap2[i]==p27 && ap3[i]==p13 && ap4[i]==p26 && ap5[i]==p14)
+
+||
+(ap1[i]==p27 && ap6[i]==p26)
+ && (ap2[i]==p13 && ap3[i]==p25 && ap4[i]==p14 && ap5[i]==p32
+||   ap2[i]==p25 && ap3[i]==p14 && ap4[i]==p32 && ap5[i]==p13
+||   ap2[i]==p14 && ap3[i]==p32 && ap4[i]==p13 && ap5[i]==p25
+||   ap2[i]==p32 && ap3[i]==p13 && ap4[i]==p25 && ap5[i]==p14)
+
+||
+(ap1[i]==p32 && ap6[i]==p25)
+ && (ap2[i]==p13 && ap3[i]==p27 && ap4[i]==p14 && ap5[i]==p26
+||   ap2[i]==p27 && ap3[i]==p14 && ap4[i]==p26 && ap5[i]==p13
+||   ap2[i]==p14 && ap3[i]==p26 && ap4[i]==p13 && ap5[i]==p27
+||   ap2[i]==p26 && ap3[i]==p13 && ap4[i]==p27 && ap5[i]==p14)
+
+||
+(ap1[i]==p26 && ap6[i]==p27)
+ && (ap2[i]==p13 && ap3[i]==p32 && ap4[i]==p14 && ap5[i]==p25
+||   ap2[i]==p32 && ap3[i]==p14 && ap4[i]==p25 && ap5[i]==p13
+||   ap2[i]==p14 && ap3[i]==p25 && ap4[i]==p13 && ap5[i]==p32
+||   ap2[i]==p25 && ap3[i]==p13 && ap4[i]==p32 && ap5[i]==p14)
+
+||
+(ap1[i]==p14 && ap6[i]==p13)
+ && (ap2[i]==p25 && ap3[i]==p26 && ap4[i]==p32 && ap5[i]==p27
+||   ap2[i]==p26 && ap3[i]==p32 && ap4[i]==p27 && ap5[i]==p25
+||   ap2[i]==p32 && ap3[i]==p27 && ap4[i]==p25 && ap5[i]==p26
+||   ap2[i]==p27 && ap3[i]==p25 && ap4[i]==p26 && ap5[i]==p32)
+
+||
+     //32_
+(ap1[i]==p11 && ap6[i]==p12)
+ && (ap2[i]==p24 && ap3[i]==p32 && ap4[i]==p28 && ap5[i]==p25
+||   ap2[i]==p32 && ap3[i]==p28 && ap4[i]==p25 && ap5[i]==p24
+||   ap2[i]==p28 && ap3[i]==p25 && ap4[i]==p24 && ap5[i]==p32
+||   ap2[i]==p25 && ap3[i]==p24 && ap4[i]==p32 && ap5[i]==p28)
+
+||
+(ap1[i]==p24 && ap6[i]==p28)
+ && (ap2[i]==p11 && ap3[i]==p25 && ap4[i]==p12 && ap5[i]==p32
+||   ap2[i]==p25 && ap3[i]==p12 && ap4[i]==p32 && ap5[i]==p11
+||   ap2[i]==p12 && ap3[i]==p32 && ap4[i]==p11 && ap5[i]==p25
+||   ap2[i]==p32 && ap3[i]==p11 && ap4[i]==p25 && ap5[i]==p12)
+
+||
+(ap1[i]==p32 && ap6[i]==p25)
+ && (ap2[i]==p11 && ap3[i]==p24 && ap4[i]==p12 && ap5[i]==p28
+||   ap2[i]==p24 && ap3[i]==p12 && ap4[i]==p28 && ap5[i]==p11
+||   ap2[i]==p12 && ap3[i]==p28 && ap4[i]==p11 && ap5[i]==p24
+||   ap2[i]==p28 && ap3[i]==p11 && ap4[i]==p24 && ap5[i]==p12)
+
+||
+(ap1[i]==p28 && ap6[i]==p24)
+ && (ap2[i]==p11 && ap3[i]==p32 && ap4[i]==p12 && ap5[i]==p25
+||   ap2[i]==p32 && ap3[i]==p12 && ap4[i]==p25 && ap5[i]==p11
+||   ap2[i]==p12 && ap3[i]==p25 && ap4[i]==p11 && ap5[i]==p32
+||   ap2[i]==p25 && ap3[i]==p11 && ap4[i]==p32 && ap5[i]==p12)
+
+||
+(ap1[i]==p25 && ap6[i]==p32)
+ && (ap2[i]==p11 && ap3[i]==p28 && ap4[i]==p12 && ap5[i]==p24
+||   ap2[i]==p28 && ap3[i]==p12 && ap4[i]==p24 && ap5[i]==p11
+||   ap2[i]==p12 && ap3[i]==p24 && ap4[i]==p11 && ap5[i]==p28
+||   ap2[i]==p24 && ap3[i]==p11 && ap4[i]==p28 && ap5[i]==p12)
+
+||
+(ap1[i]==p12 && ap6[i]==p11)
+ && (ap2[i]==p24 && ap3[i]==p25 && ap4[i]==p28 && ap5[i]==p32
+||   ap2[i]==p25 && ap3[i]==p28 && ap4[i]==p32 && ap5[i]==p24
+||   ap2[i]==p28 && ap3[i]==p32 && ap4[i]==p24 && ap5[i]==p25
+||   ap2[i]==p32 && ap3[i]==p24 && ap4[i]==p25 && ap5[i]==p28)
+
+||
+)
