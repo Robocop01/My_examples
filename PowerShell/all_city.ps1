@@ -46,14 +46,14 @@ $serverSmtp = "smtp.rambler.ru"
 #Порт сервера
 $port = 25 #465
 #От кого
-$From = "jaguardemos@rambler.ru"
+$From = "***@rambler.ru"
 #Кому
-$To = "DBublikov@ctcmedia.ru"
+$To = "***@ctcmedia.ru"
 #Тема письма
 $subject = "Update_Polomars"
 #Логин и пароль от ящики с которого отправляете login@yandex.ru
-$user = "Jaguardemos"
-$pass = "raznoe++"
+$user = "login"
+$pass = "****"
 #Путь до файла
 #$file = "time.ps1"
 
