@@ -1,0 +1,51 @@
+.menu {  width:100%; }
+.punkt { float:center; padding: 1px 1px 0px 1px; background:transparent; position:relative; cursor:pointer; }
+.punkt div { padding:2px 7px 2px 7px;}
+div.list_punkts {background:#d7d7d4; position:absolute; top:26px; left:0px;
+display:none; padding:0px; width:180px; border:solid 1px #000;}
+div.list_punkts div.kont {padding:0px;margin:3px; /*background:#80FF00;*/ }
+
+div.list_punkts  {color:#000000;text-decoration:none; padding:0px; cursor:pointer;  text-align: left;}
+div.list_punkts div  div.podpunkt { /*background:#FF8000;*/ width:100%; padding:0px; margin-top:2px; }
+
+div.list_punkts div div.podpunkt div {  width:100%;padding:0px 0px 0px 2px; white-space:pre;}
+
+
+.footer_menu { clear:both;  }
+.dat
+{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-weight: normal;
+        text-decoration:none;
+
+}
+.datline
+{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-weight: normal;
+        text-decoration:line-through;
+
+}
+.Rem
+{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-weight: normal;
+        text-decoration:none;
+
+}
+.R {CURSOR: help;}
+.buttom
+{
+         background-repeat: no-repeat;
+         margin: 0 5px 10px 0px;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 12px;
+         font-weight: normal;
+         color: #003366;
+         text-decoration: none;
+         text-align: center;
+         cursor:hand;
+}
