@@ -8,10 +8,12 @@ function draw_form($bad_login = false)
      if ($bad_login) echo 'неправильный логин и/или пароль';  }
 /* Проверку логина и пароля */
 function check_login($login, $pass)
-{	//////////////////////////////    Первое подключение к базе!!!define("DBName","ip_prog");
-define("HostName","localhost");
-define("UserName","root");
-define("Password","");
+{
+	//////////////////////////////    Первое подключение к базе!!!
+define("DBName","ip_prog");
+define("HostName","database-2.czmdavhidebl.eu-central-1.rds.amazonaws.com");
+define("UserName","user1");
+define("Password","Admin1mysql");
 
 if(!mysql_connect(HostName,UserName,Password))
 {  echo "Не могу соединиться с базой".DBName."!<br>";
