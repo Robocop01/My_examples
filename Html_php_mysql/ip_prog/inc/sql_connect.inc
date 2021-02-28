@@ -1,9 +1,9 @@
 <?
 isset($_SESSION['login']) or die('вы не авторизованы');
 define("DBName","ip_prog");
-define("HostName","localhost");
-define("UserName","root");
-define("Password","");
+define("HostName","database-2.czmdavhidebl.eu-central-1.rds.amazonaws.com");
+define("UserName","user1");
+define("Password","Admin1mysql");
 
 if(!mysql_connect(HostName,UserName,Password))
 {  echo "Ќе могу соединитьс€ с базой".DBName."!<br>";
