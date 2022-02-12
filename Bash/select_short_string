@@ -1,0 +1,32 @@
+#!/bin/bash
+
+str_base="aaaabbbbbvvvxvxxzzzzrgdsbbbdddvcc"
+end_cycle=${#str_base}
+declare -a str_m
+a=0 b=0 c=0
+
+for ((i=0; i < end_cycle; i++))
+do
+# если первый символ равен второму, то пропускаем
+ if [[ "${str_base:$i:1}" == "${str_base:$i+1:1}" ]]; then continue
+ else
+# прибавляем символы, если они не равны предыдущим
+      for ((b=i; b < end_cycle; b++))
+      do
+# повторяется ли следующий символ
+        if [[ "${str_m[$a]}" == *"${str_base:$b:1}"* ]]; then break
+        else
+        str_m[$a]=${str_m[$a]}"${str_base:$b:1}"
+        fi
+        done
+        a=$((a+1))
+fi
+done            
+
+for ((i=0; i < a; i++))
+do
+   if [[ ${#str_m[$i]} > $c ]]; then c=${#str_m[$i]} index=$i
+   fi
+done
+     
+echo "the" $str_base "longest string of non-repeating characters =" ${str_m[$index]}
