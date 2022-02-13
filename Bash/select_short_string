@@ -1,6 +1,6 @@
 #!/bin/bash
 
-str_base="aabbbhjkllnbvcyrdddfdhgjhtugqpossqwertyuiopasdfghsshfghfyrfrygvbybyrjjhhfdjshjfjhdfhxbcvmdryuiopqwqwertyuiopasdfghjklzxcvb"
+str_base="aaaabbbbbvvvxvxxzzzzrgdsbbbdddvcc"
 end_cycle=${#str_base}
 declare -a str_m
 a=0 b=0 c=0
