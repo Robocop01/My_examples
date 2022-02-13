@@ -1,6 +1,6 @@
 #!/bin/bash
 
-str_base="aaaabbbbbvvvxvxxzzzzrgdsbbbdddvcc"
+str_base="aabbbhjkllnbvcyrdddfdhgjhtugqpossqwertyuiopasdfghss"
 end_cycle=${#str_base}
 declare -a str_m
 a=0 b=0 c=0
@@ -14,7 +14,10 @@ do
       for ((b=i; b < end_cycle; b++))
       do
 # повторяется ли следующий символ
-        if [[ "${str_m[$a]}" == *"${str_base:$b:1}"* ]]; then break
+        if [[ "${str_m[$a]}" == *"${str_base:$b:1}"* ]]; then 
+           if [[ ${#str_m[$a]} -gt $c ]]; then c=${#str_m[$a]} index=$a 
+           fi 
+           break
         else
         str_m[$a]=${str_m[$a]}"${str_base:$b:1}"
         fi
@@ -23,10 +26,4 @@ do
 fi
 done            
 
-for ((i=0; i < a; i++))
-do
-   if [[ ${#str_m[$i]} > $c ]]; then c=${#str_m[$i]} index=$i
-   fi
-done
-     
 echo "the" $str_base "longest string of non-repeating characters =" ${str_m[$index]}
