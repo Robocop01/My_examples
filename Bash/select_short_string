@@ -21,7 +21,7 @@ do
         done
       if [[ ${#str_m[$a]} -gt $c ]]; then c=${#str_m[$a]} index=$a 
       fi
-      a=$((a+1))
+      i=$b a=$((a+1))
 fi
 done
 
